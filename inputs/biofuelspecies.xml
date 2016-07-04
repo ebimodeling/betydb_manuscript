@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<pecan>
+ <outdir>/tmp/</outdir>
+
+ <pfts>
+  <pft>
+   <name>misp</name>
+  </pft>
+  <pft>
+   <name>pavi</name>
+  </pft>
+  <pft>
+   <name>salix</name>
+  </pft>
+  <pft>
+   <name>populus</name>
+  </pft>
+  <pft>
+   <name>saof</name>
+  </pft>
+ </pfts>
+
+ <database>
+  <driver>PostgreSQL</driver>
+  <username>bety</username>
+  <password>bety</password>
+  <dbname>bety</dbname>
+  <host>bety</host>
+  <write>FALSE</write>
+ </database>
+ <meta.analysis>
+  <random.effects>TRUE</random.effects>
+  <iter>20000</iter>
+  <update>TRUE</update>
+ </meta.analysis>
+
+  <model>
+    <name>BIOCRO</name>
+    <id>7</id>
+  </model>
+
+ <run>
+  <start.date>0000/01/01</start.date>
+  <end.date>0000/01/02</end.date>
+ </run>
+</pecan>

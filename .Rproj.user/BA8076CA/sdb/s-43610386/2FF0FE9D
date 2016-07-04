@@ -1,0 +1,17 @@
+{
+    "contents" : "<?xml version=\"1.0\"?>\n<pecan>\n <outdir>/tmp/</outdir>\n\n <pfts>\n  <pft>\n   <name>misp</name>\n  </pft>\n  <pft>\n   <name>pavi</name>\n  </pft>\n  <pft>\n   <name>salix</name>\n  </pft>\n  <pft>\n   <name>populus</name>\n  </pft>\n  <pft>\n   <name>saof</name>\n  </pft>\n </pfts>\n\n <database>\n  <driver>PostgreSQL</driver>\n  <username>bety</username>\n  <password>bety</password>\n  <dbname>bety</dbname>\n  <host>bety</host>\n  <write>FALSE</write>\n </database>\n <meta.analysis>\n  <random.effects>TRUE</random.effects>\n  <iter>20000</iter>\n  <update>TRUE</update>\n </meta.analysis>\n\n  <model>\n    <name>BIOCRO</name>\n    <id>7</id>\n  </model>\n\n <run>\n  <start.date>0000/01/01</start.date>\n  <end.date>0000/01/02</end.date>\n </run>\n</pecan>\n",
+    "created" : 1467668491442.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "412901285",
+    "id" : "2FF0FE9D",
+    "lastKnownWriteTime" : 1467668575,
+    "path" : "~/dev/gcbb_manuscript/inputs/biofuelspecies.xml",
+    "project_path" : "inputs/biofuelspecies.xml",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "xml"
+}
