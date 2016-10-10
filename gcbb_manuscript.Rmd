@@ -37,6 +37,7 @@ library(pander)
 require(knitr)
 library(data.table)
 library(scales)
+library(dplyr)
 
 
 theme_set(theme_bw())
@@ -71,10 +72,10 @@ glopnet.data <- read.xls("wright-2004.xls", skip = 7)
 
 g <- glopnet.data %>% mutate(leaf_longevity = 12 * 10^(log.LL),  SLA =  1000/ (10^log.LMA), GS = 10^log.Gs,
                              leafN = 10^log.Nmass, leafP = 10^log.Pmass, leaf_respiration_rate_m2 = 10^log.Rdarea) %>% 
-  dplyr::select( scientificname = Species, leaf_longevity, SLA, GS, leafN, leafP, leaf_respiration_rate_m2)
+  dplyr::select(scientificname = Species, leaf_longevity, SLA, GS, leafN, leafP, leaf_respiration_rate_m2)
 
 library(tidyr)
-gg <- g %>% gather(key = scientificname, na.rm = TRUE) %>% mutate(citation_id = 160, result_type = 'traits', author = 'Wright',access_level = 2, checked = 1)
+gg <- g %>% gather(trait, mean, -scientificname, na.rm = TRUE) %>% mutate(citation_id = 160, result_type = 'traits', author = 'Wright',access_level = 2, checked = 1)
 
 ```
 
@@ -83,10 +84,10 @@ bety_glopnet <- tbl(
   bety, sql("select * from traits_and_yields_view_private where author = 'Wright'")) %>% collect 
 
 
-traits_yields_view <- rbind(traits_yields_view, bety_glopnet)
+traits_yields_view <- rbind(traits_yields_view, bety_glopnet) %>% data.table
 
 
-data_summary <- traits_yields_view %>% setDT
+data_summary <- traits_yields_view
 save(data_summary, file ="data/data_summary.RData")
 save(traits_yields_view, file ="data/traits_yields_view.RData")
 write.csv(data_summary, file = 'data/data_summary.csv', row.names = FALSE)
@@ -111,6 +112,7 @@ rbind(.d[!genus == "" ][1:15], .d[, list(genus = "Total", ntraits = sum(ntraits)
 ```{r record-status}
 load('data/traits_yields_view.RData')
 ## Number of records checked
+
 traits_yields_view[,list(n = length(n)),by='checked'] %>% kable
 ## Number of public records
 traits_yields_view[,list(n = length(n)),by='access_level'] %>% kable
@@ -145,92 +147,109 @@ trait_summary <- T[genus %in% genera & trait %in% traits, list(n = length(mean))
 trait.dictionary <- read.csv('data/trait.dictionary.csv')
 trait.dictionary <- trait.dictionary %>% dplyr::select(trait = id, label = figid) %>% rbind(data.frame(trait = "Ayield", label = "Yield"))
 
-trait_summary_full <- genera_x_traits %>%  
+trait_summary_full <- genera_x_traits  %>% 
   full_join(trait_summary, by = c('genus', 'trait')) %>%
-  left_join(trait.dictionary, by = 'trait')
+  left_join(trait.dictionary, by = 'trait')%>%  
+  filter(genus !='Agave')
+
 ```
 
 
 ```{r trait-plot}
+devtools::install_github("infotroph/ggplotTicks")
+library(ggplotTicks)
 
 trait_plot <- ggplot(data = trait_summary_full) +
   geom_bar(aes(genus, n, fill = label), stat = "identity", position = "dodge", width = 0.75) +
   scale_fill_manual(values=c(brewer_pal(palette="Paired")(11), "black")) +
   guides(fill = guide_legend(reverse=TRUE, title="Trait" )) +
   ylab("Number of Records") + xlab("") +
-  scale_y_log10(breaks = c(1, 10, 100, 1000, 10000), limits = c(1,4000)) +
-  scale_x_discrete(limits = c("Pinus", "Populus", "Salix", "Saccharum", "Panicum", "Miscanthus")) +
+  scale_y_log10(breaks = c(1, 10, 100, 1000, 10000), limits = c(1,7500)) +
+  scale_x_discrete(limits = c("Pinus", "Populus", "Salix", "Robinia", "Saccharum", "Panicum", "Miscanthus")) +
   coord_flip() +
-  theme_bw()  +
-  theme(#legend.position = c(0.9,0.25),
-        legend.background = element_rect(fill='white', color = 'white'),
-        axis.title = element_text(size = 24, vjust = 0.1),
-        legend.text = element_text(size = 20),
-        legend.title = element_text(size = 0, color = "white"),
-        axis.text = element_text(size = 20),
-        axis.ticks.y = element_blank(),
-        panel.grid = element_blank(),
-        panel.border = element_blank()) +
-  geom_vline(xintercept = 0)
+  theme_bw()
 
+trait_plot2 <- trait_plot +
+  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+        axis.title = element_text(vjust = 0.1),
+        panel.grid = element_blank(),
+        axis.ticks.length = unit(-0.1, 'cm'),
+        axis.text.x = element_text(size = 8, margin=margin(5,5,5,5,"mm")),
+        axis.text.y = element_text(size = 8, margin=margin(5,5,5,5,"mm")),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = 'black')) +
+  geom_vline(xintercept = 0) 
+
+trait_plot2.1 <- trait_plot2 + theme(legend.key.size = unit(2, 'mm'),
+                    legend.key = element_rect(size = 0),
+                    legend.title = element_blank(), 
+                    legend.position = c(0.85,0.4))
+
+trait_plot3 <- mirror_ticks(trait_plot2.1)
 #print(trait_plot)
-ggsave(plot = trait_plot, 
+ggsave(plot = trait_plot3, 
        filename = 'figures/trait_records_by_genus.png', 
-       width = 18, height = 8, dpi = 200)
-## 1415 x 620 pixels
+       width = 169, height = 100, dpi = 200, units = 'mm')
+
 
 ```
 
 ```{r trait-data-histogram}
 
-T <- traits_yields_view[!is.na(mean)&checked >=0] 
-T[trait == 'c2n_leaf', `:=`(trait = 'leafN', mean = 48 / mean) ]
-T[trait == 'Ayield', trait := 'Yield']
-T[trait == 'LMA', `:=`(mean = 1/mean, trait = 'SLA')]
-T[trait == 'Vcmax', trait:='Vmax']
+T <- traits_yields_view %>% 
+  filter(!is.na(mean) & checked >= 0)
+
+leafN <- T %>% filter(trait == 'c2n_leaf') %>% mutate(trait = 'leafN', mean = 48/mean)
+yield <- T %>% filter(trait == 'Ayield') %>% mutate(trait = 'Yield')
+sla <- T %>% filter(trait == 'LMA', mean = 1/mean)
+vmax <- T %>% filter(trait == 'Vcmax') %>% mutate(trait = 'Vmax')
+
+T <- rbind(T, leafN, yield, sla, vmax)
+
 histogram_traits <- c("Yield", "leafN", "LAI", "SLA","Vmax", "Jmax")
-T <- T[trait %in% histogram_traits]
-T[, `:=`(trait = as.factor(trait))]
-levels(T$trait)
+T <- T %>% filter(trait %in% histogram_traits)
 levels(T$trait) <- c("Jmax", "LAI", "Leaf Nitrogen (%)", "Specific Leaf Area (m2/kg)", "Vmax", "Yield (Mg/ha)")
+
 
 T[!genus %in% genera, `:=`(genus = 'Other')]
 T[,`:=`(genus = factor(genus, 
                        levels = c("Agave", "Miscanthus", "Panicum", "Pinus", "Populus", "Robinia", "Saccharum", "Salix", "Other"),
                        labels = c("Agave", "Miscanthus", "Panicum (Switchgrass)", "Pinus (Pine)", "Populus (Poplar)", "Robinia (Locust)", "Saccharum (Sugarcane)", "Salix (Willow)", "Other")))]
 
-trait_hist <- ggplot() +
-#   geom_histogram(bins = 25, data = T, aes(mean), fill = 'lightgrey',  alpha = 0.4) +
-   geom_histogram(bins = 25, data = T, aes(mean, fill = genus, color = genus)) +
+T <- data.frame(T)
+
+trait_hist <- ggplot(data = T) +
+  geom_histogram(bins = 25, aes(mean, fill = genus, color = genus)) +
   scale_color_manual(values = c(brewer_pal(type = "div", palette = "Set1")(8), 'grey80')) +
   scale_fill_manual(values = c(brewer_pal(type = "div", palette = "Set1")(8), 'grey80')) +
   ylab("Count") +
-  xlab("Observed Mean") +
-  facet_wrap(~trait, scales = 'free', switch = "x") +
-  theme(#legend.position = c(0.9,0.25),
-        legend.background = element_rect(fill='white', color = 'white'),
-        axis.title = element_text(size = 24, vjust = 0.1),
-        legend.text = element_text(size = 20),
-        legend.title = element_text(size = 0, color = "white"),
-        axis.text = element_text(size = 20),
-        axis.ticks.y = element_blank(),
+  xlab("Observed mean") +
+  facet_wrap(~trait, scales = 'free', switch = "x")
+
+
+trait_hist2 <- trait_hist +  
+  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+        line = element_line(color = 'black'),
+        axis.title = element_text(vjust = 0.1),
         panel.grid = element_blank(),
-        panel.border = element_blank(),
+        axis.ticks.length = unit(-0.1, 'cm'),
+        axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
+        axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
+        
+        legend.key.size = unit(3, 'mm'),
+        legend.key = element_rect(size = 0),
+        legend.title = element_blank(),
+        #panel.grid = element_blank(),
+        #panel.border = element_blank(),
         strip.background = element_blank(), #http://docs.ggplot2.org/current/facet_wrap.html
-        strip.text = element_text(size = 20)
-) 
+        strip.text = element_text(size = 8))
 
-ggsave(plot = trait_hist, 
+trait_hist3 <- mirror_ticks(trait_hist2, allPanels = TRUE)
+
+ggsave(plot = trait_hist3, 
       filename = 'figures/trait_histograms_by_genus.png', 
-      width = 18, height = 6, dpi = 200)
+      width = 169, height = 100, dpi = 300, units = 'mm')
 
-
-#p <- cowplot::plot_grid(plotlist = list(trait_plot, NULL,
-#                        trait_hist),  nrow = 3, labels = c('A','', 'B'), #label_size = 20, rel_heights = c(1,0.2,0.8))
-
-#ggsave(plot = p, 
-#       filename = 'figures/trait_records_by_genus_by_traits.png', 
-#       width = 24, height = 16, dpi = 200)
 
 ```
 ## Trait Meta-analysis
@@ -243,7 +262,7 @@ settings <- read.settings("inputs/biofuelspecies.xml")
 
 settings$pfts <- get.trait.data(pfts = settings$pfts, 
                                 modeltype = "BIOCRO", 
-                                dbfiles = settings$run$dbfiles, 
+                                dbfiles = settings$database$dbfiles, 
                                 database = settings$database$bety,   
                                 forceupdate = FALSE, 
                                 trait.names = TRUE)
