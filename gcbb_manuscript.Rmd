@@ -56,7 +56,35 @@ d <- list(host = 'ebi-forecast.igb.illinois.edu',
 bety <- src_postgres(host = d$host, user = d$user, password = d$password, dbname = d$dbname)
 
 traits_yields_view <- tbl(
-  bety, sql("select * from traits_and_yields_view_private where checked > -1")) %>% collect
+  bety, sql("select * from traits_and_yields_view_private where checked > -1 and access_level = 4")) %>% collect
+
+```
+
+```{r glopnet, eval = FALSE}
+
+
+## bring in Glopnet
+library(gdata)
+library(dplyr)
+#download.file("http://www.nature.com/nature/journal/v428/n6985/extref/nature02403-s2.xls", "wright-2004.xls")
+glopnet.data <- read.xls("wright-2004.xls", skip = 7)
+
+g <- glopnet.data %>% mutate(leaf_longevity = 12 * 10^(log.LL),  SLA =  1000/ (10^log.LMA), GS = 10^log.Gs,
+                             leafN = 10^log.Nmass, leafP = 10^log.Pmass, leaf_respiration_rate_m2 = 10^log.Rdarea) %>% 
+  dplyr::select( scientificname = Species, leaf_longevity, SLA, GS, leafN, leafP, leaf_respiration_rate_m2)
+
+library(tidyr)
+gg <- g %>% gather(key = scientificname, na.rm = TRUE) %>% mutate(citation_id = 160, result_type = 'traits', author = 'Wright',access_level = 2, checked = 1)
+
+```
+
+```{r summary}
+bety_glopnet <- tbl(
+  bety, sql("select * from traits_and_yields_view_private where author = 'Wright'")) %>% collect 
+
+
+traits_yields_view <- rbind(traits_yields_view, bety_glopnet)
+
 
 data_summary <- traits_yields_view %>% setDT
 save(data_summary, file ="data/data_summary.RData")
@@ -87,7 +115,7 @@ traits_yields_view[,list(n = length(n)),by='checked'] %>% kable
 ## Number of public records
 traits_yields_view[,list(n = length(n)),by='access_level'] %>% kable
 
-
+traits_yields_view[checked >=0 & (!author == 'Wright') & access_level < 4,list(n = length(mean)),by='name,author'] %>% kable
 ## Number of public bioenergy records
 
 # Bioenergy Genera
@@ -197,13 +225,15 @@ ggsave(plot = trait_hist,
       width = 18, height = 6, dpi = 200)
 
 
+#p <- cowplot::plot_grid(plotlist = list(trait_plot, NULL,
+#                        trait_hist),  nrow = 3, labels = c('A','', 'B'), #label_size = 20, rel_heights = c(1,0.2,0.8))
+
+#ggsave(plot = p, 
+#       filename = 'figures/trait_records_by_genus_by_traits.png', 
+#       width = 24, height = 16, dpi = 200)
 
 ```
 ## Trait Meta-analysis
-
-This will be most easily run on a PEcAn Virtual Machine. 
-
-https://opensource.ncsa.illinois.edu/projects/artifacts.php?key=PECAN
 
 ```{r ma-data-import}
 ## Import traits

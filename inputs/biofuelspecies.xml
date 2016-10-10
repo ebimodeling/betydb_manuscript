@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <pecan>
- <outdir>/tmp/</outdir>
+ <outdir>/home/dlebauer/dev/gcbb_manuscript/outputs</outdir>
 
  <pfts>
   <pft>
@@ -24,14 +24,14 @@
   <driver>PostgreSQL</driver>
   <username>bety</username>
   <password>bety</password>
-  <dbname>bety</dbname>
-  <host>bety</host>
+  <dbname>ebi_production</dbname>
+  <host>localhost</host>
   <write>FALSE</write>
  </database>
  <meta.analysis>
   <random.effects>TRUE</random.effects>
   <iter>20000</iter>
-  <update>TRUE</update>
+  <update>FALSE</update>
  </meta.analysis>
 
   <model>
