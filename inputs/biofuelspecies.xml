@@ -25,7 +25,7 @@
   <username>bety</username>
   <password>bety</password>
   <dbname>ebi_production</dbname>
-  <host>localhost</host>
+  <host>ebi-forecast.igb.illinois.edu</host>
   <write>FALSE</write>
  </database>
  <meta.analysis>
