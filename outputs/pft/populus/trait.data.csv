@@ -1,0 +1,581 @@
+".id","id","citation_id","site_id","treatment_id","name","date","time","cultivar_id","specie_id","mean","statname","stat","n","vname","month","lon","lat","control","greenhouse","mean_unconverted","stat_unconverted"
+"Jmax",24080,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,163,NA,21.07,4,"Jmax",7,-3.15,51.97,TRUE,NA,163,21.07
+"Jmax",24081,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,221,NA,12.42,4,"Jmax",7,-3.15,51.97,TRUE,NA,221,12.42
+"Jmax",24082,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,156,NA,16.09,4,"Jmax",7,-3.15,51.97,TRUE,NA,156,16.09
+"Jmax",24083,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,215,NA,27.71,4,"Jmax",7,-3.15,51.97,TRUE,NA,215,27.71
+"Jmax",24084,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,151,NA,16.07,4,"Jmax",7,-3.15,51.97,TRUE,NA,151,16.07
+"Jmax",37533,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,130.2742,NA,23.6801,5,"Jmax",6,NA,NA,TRUE,NA,130.2742,23.6801
+"Jmax",44609,485,57,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,26.5,"SE",2.7,4,"Jmax",NA,-88.67,37.45,TRUE,FALSE,26.5,2.7
+"Jmax",44611,485,57,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,23.8,"SE",2.1,4,"Jmax",NA,-88.67,37.45,TRUE,FALSE,23.8,2.1
+"Jmax",44613,485,799,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,17.6,"SE",1.9,4,"Jmax",NA,-89.35,43.3,TRUE,FALSE,17.6,1.9
+"Jmax",44615,485,799,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,24.8,"SE",4.9,4,"Jmax",NA,-89.35,43.3,TRUE,FALSE,24.8,4.9
+"Jmax",44617,485,798,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,34.4,"SE",1.3,4,"Jmax",NA,-89.37,45.65,TRUE,FALSE,34.4,1.3
+"Jmax",44619,485,798,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,42.9,"SE",2.8,4,"Jmax",NA,-89.37,45.65,TRUE,FALSE,42.9,2.8
+"Jmax",25550,51,NA,1,"observational",NA,"00:00:00",NA,1072,117,"SE",1,1,"Jmax",NA,NA,NA,TRUE,NA,117,1
+"Jmax",25551,51,NA,1,"observational",NA,"00:00:00",NA,2808,90,"SE",2,2,"Jmax",NA,NA,NA,TRUE,NA,90,2
+"Jmax",25552,51,NA,1,"observational",NA,"00:00:00",NA,2809,237,"SE",4,1,"Jmax",NA,NA,NA,TRUE,NA,237,4
+"Jmax",25553,51,NA,1,"observational",NA,"00:00:00",NA,1076,169,"SE",4,2,"Jmax",NA,NA,NA,TRUE,NA,169,4
+"Jmax",25554,51,NA,1,"observational",NA,"00:00:00",NA,1080,68,"SE",7,1,"Jmax",NA,NA,NA,TRUE,NA,68,7
+"Jmax",39542,441,674,1403,"Observational",NA,"00:00:00",NA,1080,55,NA,NA,NA,"Jmax",NA,-147.87,64.82,TRUE,NA,55,NA
+"Jmax",39544,441,674,1403,"Observational",NA,"00:00:00",NA,39387,55,NA,NA,NA,"Jmax",NA,-147.87,64.82,TRUE,NA,55,NA
+"Jmax",44068,563,863,1675,"observational",NA,"00:00:00",NA,2860,128,"SE",4,3,"Jmax",NA,175.618511,-40.348268,TRUE,TRUE,128,4
+"Jmax",24075,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",92,2860,82.4,NA,NA,4,"Jmax",6,-92.77,39.02,NA,NA,82.4,NA
+"Jmax",24076,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",93,2860,82.84,NA,NA,4,"Jmax",6,-92.77,39.02,NA,NA,82.84,NA
+"Jmax",24077,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",94,1072,107.93,NA,NA,4,"Jmax",6,-92.77,39.02,NA,NA,107.93,NA
+"Jmax",24078,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",95,1072,118.07,NA,NA,4,"Jmax",6,-92.77,39.02,NA,NA,118.07,NA
+"Jmax",24079,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",96,1072,96.87,NA,NA,4,"Jmax",6,-92.77,39.02,NA,NA,96.87,NA
+"Jmax",50664,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,196.88,NA,NA,1,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,196.88,NA
+"Jmax",50665,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,177.41,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,177.41,NA
+"Jmax",50666,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,182.11,NA,NA,1,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,182.11,NA
+"Jmax",50667,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,188.45,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,188.45,NA
+"Jmax",50668,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,203.43,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,203.43,NA
+"Jmax",50669,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,192.49,NA,NA,1,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,192.49,NA
+"Jmax",50670,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,133.06,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,133.06,NA
+"Jmax",50671,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,183.93,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,183.93,NA
+"Jmax",50672,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,206.69,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,206.69,NA
+"Jmax",50673,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,193.46,NA,NA,2,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,193.46,NA
+"Jmax",50719,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,162.26,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,162.26,NA
+"Jmax",50720,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,185.44,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,185.44,NA
+"Jmax",50721,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,199.59,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,199.59,NA
+"Jmax",50722,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,164.61,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,164.61,NA
+"Jmax",50723,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,191.17,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,191.17,NA
+"Jmax",50724,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,188.92,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,188.92,NA
+"Jmax",50725,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,176.48,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,176.48,NA
+"Jmax",50726,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,189.91,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,189.91,NA
+"Jmax",50727,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,159.96,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,159.96,NA
+"Jmax",50728,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,225.95,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,225.95,NA
+"Jmax",50729,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,197.39,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,197.39,NA
+"Jmax",50730,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,180.06,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,180.06,NA
+"Jmax",50731,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,184.03,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,184.03,NA
+"Jmax",50732,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,189.35,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,189.35,NA
+"Jmax",50733,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,205.91,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,205.91,NA
+"Jmax",50734,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,127.08,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,127.08,NA
+"Jmax",50735,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,179.78,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,179.78,NA
+"Jmax",50788,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,149.7,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,149.7,NA
+"Jmax",50789,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,170.04,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,170.04,NA
+"Jmax",50790,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,164.87,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,164.87,NA
+"Jmax",50791,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,159.22,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,159.22,NA
+"Jmax",50792,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,170.71,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,170.71,NA
+"Jmax",50793,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,164.06,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,164.06,NA
+"Jmax",50794,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,149.45,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,149.45,NA
+"Jmax",50795,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,168.95,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,168.95,NA
+"Jmax",50796,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,165.94,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,165.94,NA
+"Jmax",50797,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,146.37,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,146.37,NA
+"Jmax",50798,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,142.62,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,142.62,NA
+"Jmax",50799,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,157.29,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,157.29,NA
+"Jmax",50800,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,169.02,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,169.02,NA
+"Jmax",50801,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,127.05,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,127.05,NA
+"Jmax",50802,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,149.02,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,149.02,NA
+"Jmax",50803,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,171.17,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,171.17,NA
+"Jmax",50804,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,156.87,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,156.87,NA
+"Jmax",50805,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,158.48,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,158.48,NA
+"Jmax",50847,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,143.85,NA,NA,1,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,143.85,NA
+"Jmax",50848,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,119.34,NA,NA,1,"Jmax",NA,-89.423525,43.077455,TRUE,TRUE,119.34,NA
+"Jmax",50868,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,132.18,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,132.18,NA
+"Jmax",50869,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,170.21,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,170.21,NA
+"Jmax",50870,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,112.49,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,112.49,NA
+"Jmax",50871,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,95.22,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,95.22,NA
+"Jmax",50872,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,105.79,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,105.79,NA
+"Jmax",50873,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,107.79,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,107.79,NA
+"Jmax",50874,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,137.03,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,137.03,NA
+"Jmax",50904,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,86.01,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,86.01,NA
+"Jmax",50905,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,113.64,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,113.64,NA
+"Jmax",50906,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,101.44,NA,NA,2,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,101.44,NA
+"Jmax",50907,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,103.57,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,103.57,NA
+"Jmax",50908,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,98.81,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,98.81,NA
+"Jmax",50909,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,81.36,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,81.36,NA
+"Jmax",50910,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,104.65,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,104.65,NA
+"Jmax",50911,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,89.78,NA,NA,1,"Jmax",NA,-89.423525,43.077455,FALSE,TRUE,89.78,NA
+"leaf_respiration_rate_m2",24581,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",92,2860,1.23,NA,NA,4,"leaf_respiration_rate_m2",6,-92.77,39.02,NA,NA,1.23,NA
+"leaf_respiration_rate_m2",24582,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",93,2860,1.23,NA,NA,4,"leaf_respiration_rate_m2",6,-92.77,39.02,NA,NA,1.23,NA
+"leaf_respiration_rate_m2",24583,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",94,1072,1.22,NA,NA,4,"leaf_respiration_rate_m2",6,-92.77,39.02,NA,NA,1.22,NA
+"leaf_respiration_rate_m2",24584,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",95,1072,1.3,NA,NA,4,"leaf_respiration_rate_m2",6,-92.77,39.02,NA,NA,1.3,NA
+"leaf_respiration_rate_m2",24585,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",96,1072,1.25,NA,NA,4,"leaf_respiration_rate_m2",6,-92.77,39.02,NA,NA,1.25,NA
+"leaf_respiration_rate_m2",34760,160,NA,NA,NA,NA,"00:00:00",NA,1072,1.27,NA,NA,NA,"leaf_respiration_rate_m2",NA,NA,NA,NA,NA,1.27,NA
+"leaf_respiration_rate_m2",34819,160,NA,NA,NA,NA,"00:00:00",NA,2809,1.74,NA,NA,NA,"leaf_respiration_rate_m2",NA,NA,NA,NA,NA,1.74,NA
+"leaf_respiration_rate_m2",34834,160,NA,NA,NA,NA,"00:00:00",NA,1080,1.84,NA,NA,NA,"leaf_respiration_rate_m2",NA,NA,NA,NA,NA,1.84,NA
+"leaf_respiration_rate_m2",34880,160,NA,NA,NA,NA,"00:00:00",NA,2864,3.47,NA,NA,NA,"leaf_respiration_rate_m2",NA,NA,NA,NA,NA,3.47,NA
+"leaf_respiration_rate_m2",37554,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,3.8364,NA,1.1738,5,"leaf_respiration_rate_m2",6,NA,NA,TRUE,NA,3.8364,1.1738
+"leaf_respiration_rate_m2",38955,426,641,1335,"High light high nutrients",2003-01-01 00:00:00,"00:00:00",NA,1076,1.3,"SE",0.2,3,"leaf_respiration_rate_m2",1,-79.394532,43.663349,TRUE,TRUE,1.3,0.2
+"leaf_respiration_rate_m2",38956,426,641,1337,"High light low nutrients",2003-01-01 00:00:00,"00:00:00",NA,1076,1,"SE",0.2,3,"leaf_respiration_rate_m2",1,-79.394532,43.663349,TRUE,TRUE,1,0.2
+"leaf_respiration_rate_m2",40901,470,624,1459,"Light",1994-06-01 05:00:00,"00:00:00",NA,1080,0.2885,"SE",0.4366,3,"leaf_respiration_rate_m2",6,-93.18,44.98,FALSE,TRUE,0.2885,0.4366
+"leaf_respiration_rate_m2",50674,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,1.23048561509616,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,1.26,NA
+"leaf_respiration_rate_m2",50675,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.948513660215207,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.96,NA
+"leaf_respiration_rate_m2",50676,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,2.74669768585291,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,2.85,NA
+"leaf_respiration_rate_m2",50677,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,3.12,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,3.12,NA
+"leaf_respiration_rate_m2",50678,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,4.04,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,4.04,NA
+"leaf_respiration_rate_m2",50679,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,1.72,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,1.72,NA
+"leaf_respiration_rate_m2",50680,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.71,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.71,NA
+"leaf_respiration_rate_m2",50681,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.9,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.9,NA
+"leaf_respiration_rate_m2",50682,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,1.08,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,1.08,NA
+"leaf_respiration_rate_m2",50683,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.51,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.51,NA
+"leaf_respiration_rate_m2",50684,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.45,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.45,NA
+"leaf_respiration_rate_m2",50685,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.88,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.88,NA
+"leaf_respiration_rate_m2",50686,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,1.16,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,1.16,NA
+"leaf_respiration_rate_m2",50687,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,0.66,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.66,NA
+"leaf_respiration_rate_m2",50736,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.72,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.72,NA
+"leaf_respiration_rate_m2",50737,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.14,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.14,NA
+"leaf_respiration_rate_m2",50738,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.16,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.16,NA
+"leaf_respiration_rate_m2",50739,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.61,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.61,NA
+"leaf_respiration_rate_m2",50740,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.81,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.81,NA
+"leaf_respiration_rate_m2",50741,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.97,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.97,NA
+"leaf_respiration_rate_m2",50742,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.07,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.07,NA
+"leaf_respiration_rate_m2",50743,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.2,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.2,NA
+"leaf_respiration_rate_m2",50744,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.36,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.36,NA
+"leaf_respiration_rate_m2",50745,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.15,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.15,NA
+"leaf_respiration_rate_m2",50746,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.85,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.85,NA
+"leaf_respiration_rate_m2",50747,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.78,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.78,NA
+"leaf_respiration_rate_m2",50748,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.28,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.28,NA
+"leaf_respiration_rate_m2",50749,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.31,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.31,NA
+"leaf_respiration_rate_m2",50750,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.12,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.12,NA
+"leaf_respiration_rate_m2",50751,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,0.84,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.84,NA
+"leaf_respiration_rate_m2",50752,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,1.19,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.19,NA
+"leaf_respiration_rate_m2",50806,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.29,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.29,NA
+"leaf_respiration_rate_m2",50807,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.48,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.48,NA
+"leaf_respiration_rate_m2",50808,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.76,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.76,NA
+"leaf_respiration_rate_m2",50809,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.38,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.38,NA
+"leaf_respiration_rate_m2",50810,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.69,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.69,NA
+"leaf_respiration_rate_m2",50811,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.77,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.77,NA
+"leaf_respiration_rate_m2",50812,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.5,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.5,NA
+"leaf_respiration_rate_m2",50813,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.83,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.83,NA
+"leaf_respiration_rate_m2",50814,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.45,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.45,NA
+"leaf_respiration_rate_m2",50815,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.3,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.3,NA
+"leaf_respiration_rate_m2",50816,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.32,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.32,NA
+"leaf_respiration_rate_m2",50817,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.45,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.45,NA
+"leaf_respiration_rate_m2",50818,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.09,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.09,NA
+"leaf_respiration_rate_m2",50819,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.49,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.49,NA
+"leaf_respiration_rate_m2",50820,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.08,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.08,NA
+"leaf_respiration_rate_m2",50821,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.84,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.84,NA
+"leaf_respiration_rate_m2",50822,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,0.71,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.71,NA
+"leaf_respiration_rate_m2",50823,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,1.25,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.25,NA
+"leaf_respiration_rate_m2",50849,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,0.59,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.59,NA
+"leaf_respiration_rate_m2",50850,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,1.83,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,1.83,NA
+"leaf_respiration_rate_m2",50851,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,3.07,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,3.07,NA
+"leaf_respiration_rate_m2",50852,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,0.97,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,0.97,NA
+"leaf_respiration_rate_m2",50853,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,3.45,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,TRUE,TRUE,3.45,NA
+"leaf_respiration_rate_m2",50875,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,0.96,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.96,NA
+"leaf_respiration_rate_m2",50876,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,1.39,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.39,NA
+"leaf_respiration_rate_m2",50877,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,2.35,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,2.35,NA
+"leaf_respiration_rate_m2",50878,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,0.96,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.96,NA
+"leaf_respiration_rate_m2",50879,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,0.73,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.73,NA
+"leaf_respiration_rate_m2",50880,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,0.79,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.79,NA
+"leaf_respiration_rate_m2",50881,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,1.87,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.87,NA
+"leaf_respiration_rate_m2",50882,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,1.05,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.05,NA
+"leaf_respiration_rate_m2",50883,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,2.92,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,2.92,NA
+"leaf_respiration_rate_m2",50912,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,1.04,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.04,NA
+"leaf_respiration_rate_m2",50913,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,2.3,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,2.3,NA
+"leaf_respiration_rate_m2",50914,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,1.21,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.21,NA
+"leaf_respiration_rate_m2",50915,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,1.11,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.11,NA
+"leaf_respiration_rate_m2",50916,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,1.1,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.1,NA
+"leaf_respiration_rate_m2",50917,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,3.26,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,3.26,NA
+"leaf_respiration_rate_m2",50918,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,3.29,NA,NA,2,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,3.29,NA
+"leaf_respiration_rate_m2",50919,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,0.94,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.94,NA
+"leaf_respiration_rate_m2",50920,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,0.7,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.7,NA
+"leaf_respiration_rate_m2",50921,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,0.79,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,0.79,NA
+"leaf_respiration_rate_m2",50922,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,1.13,NA,NA,1,"leaf_respiration_rate_m2",NA,-89.423525,43.077455,FALSE,TRUE,1.13,NA
+"stomatal_slope.BB",49922,656,76,2085,"observational",NA,NA,NA,1072,5.95,"SE",1.35,4,"stomatal_slope.BB",NA,-88.202,40.0637,TRUE,FALSE,5.95,1.35
+"stomatal_slope.BB",42296,524,829,1575,"observational",NA,"00:00:00",NA,1080,13.5,NA,NA,NA,"stomatal_slope.BB",NA,-105.073053,40.580366,TRUE,NA,13.5,NA
+"stomatal_slope.BB",43590,544,858,1665,"observational",NA,"00:00:00",NA,1080,8.12,NA,NA,NA,"stomatal_slope.BB",NA,-105.247193,40.010797,TRUE,FALSE,8.12,NA
+"SLA",24675,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",103,2867,17.3,"SE",0.76,3,"SLA",6,4.37,51.08,TRUE,FALSE,17.3,0.76
+"SLA",24692,99,126,280,"Observational",2003-06-15 00:00:00,"00:00:00",103,2068,15.1,"SE",3,3,"SLA",6,4.37,51.08,TRUE,FALSE,15.1,3
+"SLA",24694,99,126,280,"Observational",2003-06-15 00:00:00,"00:00:00",113,2955,16.5,"SE",6,3,"SLA",6,4.37,51.08,TRUE,FALSE,16.5,6
+"SLA",24678,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",106,2862,18.1,"SE",0.12,3,"SLA",6,4.37,51.08,TRUE,FALSE,18.1,0.12
+"SLA",24679,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",107,2862,20.9,"SE",0.74,3,"SLA",6,4.37,51.08,TRUE,FALSE,20.9,0.74
+"SLA",24682,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",275,2866,21.1,"SE",0.65,3,"SLA",6,4.37,51.08,TRUE,FALSE,21.1,0.65
+"SLA",24683,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",276,2866,19.7,"SE",0.173,3,"SLA",6,4.37,51.08,TRUE,FALSE,19.7,0.173
+"SLA",24684,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",277,2866,17.8,"SE",0.173,3,"SLA",6,4.37,51.08,TRUE,FALSE,17.8,0.173
+"SLA",24685,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",110,2860,20.9,"SE",0.88,3,"SLA",6,4.37,51.08,TRUE,FALSE,20.9,0.88
+"SLA",24696,99,126,280,"Observational",2003-06-15 00:00:00,"00:00:00",152,2068,15.6,"SE",4,3,"SLA",6,4.37,51.08,TRUE,FALSE,15.6,4
+"SLA",38832,424,639,1329,"Observational",NA,"00:00:00",NA,1080,17.57,"SE",0.53,60,"SLA",NA,-90.116667,45.8,TRUE,FALSE,17.57,0.53
+"SLA",37577,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,15.4309,NA,1.0741,9,"SLA",6,NA,NA,TRUE,NA,15.4309,1.0741
+"SLA",37598,381,602,1220,"observational",2010-08-01 00:00:00,"00:00:00",NA,1072,15.4144,NA,3.4352,12,"SLA",8,NA,NA,TRUE,NA,15.4144,3.4352
+"SLA",37619,381,602,1220,"observational",2010-09-01 00:00:00,"00:00:00",NA,1072,12.6156,NA,2.4407,8,"SLA",9,NA,NA,TRUE,NA,12.6156,2.4407
+"SLA",39552,441,674,1403,"Observational",NA,"00:00:00",NA,1080,12.2,NA,NA,NA,"SLA",NA,-147.87,64.82,TRUE,NA,12.2,NA
+"SLA",39554,441,674,1403,"Observational",NA,"00:00:00",NA,39387,12.2,NA,NA,NA,"SLA",NA,-147.87,64.82,TRUE,NA,12.2,NA
+"SLA",24688,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",113,2955,20.3,"SE",0.146,3,"SLA",6,4.37,51.08,TRUE,FALSE,20.3,0.146
+"SLA",24689,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",114,2955,16,"SE",0.172,3,"SLA",6,4.37,51.08,TRUE,FALSE,16,0.172
+"SLA",24690,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",115,2955,18.4,"SE",0.298,3,"SLA",6,4.37,51.08,TRUE,FALSE,18.4,0.298
+"SLA",24691,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",116,2579,17.2,"SE",0.239,3,"SLA",6,4.37,51.08,TRUE,FALSE,17.2,0.239
+"SLA",24687,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",126,2860,19.6,"SE",0.82,3,"SLA",6,4.37,51.08,TRUE,FALSE,19.6,0.82
+"SLA",24740,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2955,16.33,"SE",0.93,4,"SLA",6,1.87,47.77,TRUE,NA,16.33,0.93
+"SLA",24739,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,1072,17.47,"SE",1.1,4,"SLA",6,1.87,47.77,TRUE,NA,17.47,1.1
+"SLA",24738,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2866,14.52,"SE",0.19,4,"SLA",6,7.67,44.7,TRUE,NA,14.52,0.19
+"SLA",24737,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2866,16.97,"SE",0.31,4,"SLA",6,1.87,47.77,TRUE,NA,16.97,0.31
+"SLA",24736,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2579,15.4,"SE",1.69,4,"SLA",6,7.67,44.7,TRUE,NA,15.4,1.69
+"SLA",24735,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2579,16.21,"SE",0.61,4,"SLA",6,1.87,47.77,TRUE,NA,16.21,0.61
+"SLA",24734,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2860,16.27,"SE",0.19,4,"SLA",6,7.67,44.7,TRUE,NA,16.27,0.19
+"SLA",24733,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2860,18.28,"SE",0.24,4,"SLA",6,1.87,47.77,TRUE,NA,18.28,0.24
+"SLA",24741,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2955,19.91,"SE",1.86,4,"SLA",6,7.67,44.7,TRUE,NA,19.91,1.86
+"SLA",44422,311,486,957,"Understory",NA,"00:00:00",NA,1070,27.3913,"SE",2.2011,5,"SLA",NA,-113.5,53.333,TRUE,TRUE,27.3913,2.2011
+"SLA",44423,311,486,959,"Open",NA,"00:00:00",NA,1070,14.6739,"SE",0.7337,5,"SLA",NA,-113.5,53.333,FALSE,TRUE,14.6739,0.7337
+"SLA",44424,311,486,957,"Understory",NA,"00:00:00",NA,1080,20.2989,"SE",3.1794,5,"SLA",NA,-113.5,53.333,TRUE,TRUE,20.2989,3.1794
+"SLA",44425,311,486,959,"Open",NA,"00:00:00",NA,1080,15.163,"SE",0.9783,5,"SLA",NA,-113.5,53.333,FALSE,TRUE,15.163,0.9783
+"SLA",44597,485,57,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,14.7,"SE",0.7,4,"SLA",NA,-88.67,37.45,TRUE,FALSE,14.7,0.7
+"SLA",44599,485,57,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,18,"SE",0.4,4,"SLA",NA,-88.67,37.45,TRUE,FALSE,18,0.4
+"SLA",44601,485,799,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,12.2,"SE",0.4,4,"SLA",NA,-89.35,43.3,TRUE,FALSE,12.2,0.4
+"SLA",44603,485,799,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,13.5,"SE",1.5,4,"SLA",NA,-89.35,43.3,TRUE,FALSE,13.5,1.5
+"SLA",44605,485,798,1515,"Observational- Dillaway",NA,"00:00:00",NA,1080,20.7,"SE",0.9,4,"SLA",NA,-89.37,45.65,TRUE,FALSE,20.7,0.9
+"SLA",44607,485,798,1515,"Observational- Dillaway",NA,"00:00:00",NA,1072,19,"SE",0.5,4,"SLA",NA,-89.37,45.65,TRUE,FALSE,19,0.5
+"SLA",24742,105,451,464,"plant date/rotation",2001-06-17 00:00:00,"00:00:00",268,1072,12.646,NA,NA,NA,"SLA",6,-0.83,51.12,TRUE,NA,12.646,NA
+"SLA",24743,105,451,464,"plant date/rotation",2001-06-17 00:00:00,"00:00:00",269,2955,10.519,NA,NA,NA,"SLA",6,-0.83,51.12,TRUE,NA,10.519,NA
+"SLA",24698,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",113,2955,17.406,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,17.406,NA
+"SLA",24699,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",114,2955,17.72,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,17.72,NA
+"SLA",24700,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",115,2955,23.566,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,23.566,NA
+"SLA",24704,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",276,2866,21.554,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,21.554,NA
+"SLA",24705,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",110,2860,20.886,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,20.886,NA
+"SLA",24706,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",111,2860,16.054,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,16.054,NA
+"SLA",24708,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",103,2068,17.976,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,17.976,NA
+"SLA",24709,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",152,2068,14.983,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,14.983,NA
+"SLA",24728,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",276,2866,17.923,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,17.923,NA
+"SLA",24729,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",110,2860,24.069,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,24.069,NA
+"SLA",24730,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",111,2860,18.948,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,18.948,NA
+"SLA",24732,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",103,2068,23.595,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,23.595,NA
+"SLA",24695,99,126,280,"Observational",2003-06-15 00:00:00,"00:00:00",126,2860,13.4,"SE",3,3,"SLA",6,4.37,51.08,TRUE,FALSE,13.4,3
+"SLA",24676,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",99,2862,16.9,"SE",0.129,3,"SLA",6,4.37,51.08,TRUE,FALSE,16.9,0.129
+"SLA",24677,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",119,2862,19.7,"SE",0.87,3,"SLA",6,4.37,51.08,TRUE,FALSE,19.7,0.87
+"SLA",24680,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",122,2862,17.4,"SE",0.153,3,"SLA",6,4.37,51.08,TRUE,FALSE,17.4,0.153
+"SLA",24693,99,126,280,"Observational",2003-06-15 00:00:00,"00:00:00",123,2862,15,"SE",2,3,"SLA",6,4.37,51.08,TRUE,FALSE,15,2
+"SLA",24681,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",123,2862,20.2,"SE",0.189,3,"SLA",6,4.37,51.08,TRUE,FALSE,20.2,0.189
+"SLA",24712,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",115,2955,9.639,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,9.639,NA
+"SLA",24716,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",276,2866,14.892,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,14.892,NA
+"SLA",24717,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",110,2860,13.877,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,13.877,NA
+"SLA",24718,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",111,2860,15.33,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,15.33,NA
+"SLA",24720,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",103,2068,12.613,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,12.613,NA
+"SLA",24721,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",152,2068,19.478,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,19.478,NA
+"SLA",24722,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",113,2955,21.342,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,21.342,NA
+"SLA",24723,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",114,2955,21.042,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,21.042,NA
+"SLA",24724,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",115,2955,18.121,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,18.121,NA
+"SLA",24707,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",126,2860,20.587,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,20.587,NA
+"SLA",24719,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",126,2860,14.134,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,14.134,NA
+"SLA",24731,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",126,2860,24.825,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,24.825,NA
+"SLA",24701,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",99,2862,19.235,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,19.235,NA
+"SLA",24713,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",99,2862,14.454,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,14.454,NA
+"SLA",24725,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",99,2862,21.689,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,21.689,NA
+"SLA",24702,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",122,2862,18.948,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,18.948,NA
+"SLA",24714,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",122,2862,11.578,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,11.578,NA
+"SLA",24726,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",122,2862,20.253,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,20.253,NA
+"SLA",24703,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",123,2862,21.665,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,21.665,NA
+"SLA",24715,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",123,2862,10.767,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,10.767,NA
+"SLA",24727,101,126,13,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",123,2862,23.287,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,23.287,NA
+"SLA",24697,101,126,11,"Observational",2001-08-15 00:00:00,"00:00:00",152,2068,18.34,NA,NA,NA,"SLA",8,4.37,51.08,TRUE,FALSE,18.34,NA
+"SLA",24686,67,126,445,"Observational",2001-06-15 00:00:00,"00:00:00",111,2860,16.6,"SE",0.13,3,"SLA",6,4.37,51.08,TRUE,FALSE,16.6,0.13
+"SLA",24710,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",113,2955,12.58,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,12.58,NA
+"SLA",24711,101,126,12,"plant date/density/irrigation/layer",2002-06-15 00:00:00,"00:00:00",114,2955,9.021,NA,NA,NA,"SLA",6,4.37,51.08,FALSE,FALSE,9.021,NA
+"SLA",38502,414,624,1310,"ambient CO2 low temp",1998-01-01 00:00:00,"00:00:00",NA,1080,31.3,"SE",2.7,NA,"SLA",1,-93.18,44.98,TRUE,TRUE,31.3,2.7
+"SLA",38503,414,624,1312,"ambient CO2 medium temp",1998-01-01 00:00:00,"00:00:00",NA,1080,34.6,"SE",2.1,NA,"SLA",1,-93.18,44.98,FALSE,TRUE,34.6,2.1
+"SLA",38504,414,624,1314,"ambient CO2 high temp",1998-01-01 00:00:00,"00:00:00",NA,1080,37.5,"SE",0.9,NA,"SLA",1,-93.18,44.98,FALSE,TRUE,37.5,0.9
+"SLA",38505,414,624,1311,"elevated CO2 low temp",1998-01-01 00:00:00,"00:00:00",NA,1080,31.3,"SE",6.9,NA,"SLA",1,-93.18,44.98,FALSE,TRUE,31.3,6.9
+"SLA",38506,414,624,1313,"elevated CO2 medium temp",1998-01-01 00:00:00,"00:00:00",NA,1080,27.2,"SE",0.4,NA,"SLA",1,-93.18,44.98,FALSE,TRUE,27.2,0.4
+"SLA",38507,414,624,1315,"elevated CO2 high temp",1998-01-01 00:00:00,"00:00:00",NA,1080,29.2,"SE",1.8,NA,"SLA",1,-93.18,44.98,FALSE,TRUE,29.2,1.8
+"SLA",38670,415,630,1316,"Observational",NA,"00:00:00",NA,1072,10.9,NA,NA,NA,"SLA",NA,-89.4293,43.0399,TRUE,FALSE,10.9,NA
+"SLA",38671,415,630,1316,"Observational",NA,"00:00:00",NA,1080,12.1,NA,NA,NA,"SLA",NA,-89.4293,43.0399,TRUE,FALSE,12.1,NA
+"SLA",40571,470,624,1459,"Light",1994-06-29 05:00:00,"00:00:00",NA,1080,66.2,"SE",7.1,3,"SLA",6,-93.18,44.98,FALSE,TRUE,66.2,7.1
+"SLA",24670,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",92,2860,17.1,NA,NA,4,"SLA",6,-92.77,39.02,NA,NA,17.1,NA
+"SLA",24671,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",93,2860,16.67,NA,NA,4,"SLA",6,-92.77,39.02,NA,NA,16.67,NA
+"SLA",24672,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",94,1072,15.61,NA,NA,4,"SLA",6,-92.77,39.02,NA,NA,15.61,NA
+"SLA",24673,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",95,1072,18.18,NA,NA,4,"SLA",6,-92.77,39.02,NA,NA,18.18,NA
+"SLA",24674,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",96,1072,16.85,NA,NA,4,"SLA",6,-92.77,39.02,NA,NA,16.85,NA
+"SLA",29203,160,NA,NA,NA,NA,"00:00:00",NA,2864,9.9009900990099,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.101,NA
+"SLA",30296,160,NA,NA,NA,NA,"00:00:00",NA,2864,25,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.04,NA
+"SLA",28919,160,NA,NA,NA,NA,"00:00:00",NA,2864,7.93650793650794,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.126,NA
+"SLA",29525,160,NA,NA,NA,NA,"00:00:00",NA,1080,12.30012300123,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0813,NA
+"SLA",38949,426,641,1337,"High light low nutrients",2003-01-01 00:00:00,"00:00:00",NA,1076,33.0553145770239,"SE",1.31468439119094,3,"LMA",1,-79.394532,43.663349,TRUE,TRUE,0.0303,0.0012
+"SLA",38950,426,641,1335,"High light high nutrients",2003-01-01 00:00:00,"00:00:00",NA,1076,44.1075415450854,"SE",3.34361361661514,3,"LMA",1,-79.394532,43.663349,TRUE,TRUE,0.0228,0.0017
+"SLA",28984,160,NA,NA,NA,NA,"00:00:00",NA,2809,8.38222967309304,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.1193,NA
+"SLA",29178,160,NA,NA,NA,NA,"00:00:00",NA,1072,9.73709834469328,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.1027,NA
+"SLA",29181,160,NA,NA,NA,NA,"00:00:00",NA,1078,9.75609756097561,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.1025,NA
+"SLA",29191,160,NA,NA,NA,NA,"00:00:00",NA,39636,9.80392156862745,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.102,NA
+"SLA",29279,160,NA,NA,NA,NA,"00:00:00",NA,1070,10.4166666666667,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.096,NA
+"SLA",29343,160,NA,NA,NA,NA,"00:00:00",NA,1069,10.8695652173913,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.092,NA
+"SLA",29353,160,NA,NA,NA,NA,"00:00:00",NA,1080,10.9409190371991,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0914,NA
+"SLA",29358,160,NA,NA,NA,NA,"00:00:00",NA,1072,11.001100110011,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0909,NA
+"SLA",29420,160,NA,NA,NA,NA,"00:00:00",NA,39636,11.5340253748558,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0867,NA
+"SLA",29441,160,NA,NA,NA,NA,"00:00:00",NA,1069,11.7233294255569,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0853,NA
+"SLA",29496,160,NA,NA,NA,NA,"00:00:00",NA,1080,12.1065375302663,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0826,NA
+"SLA",29580,160,NA,NA,NA,NA,"00:00:00",NA,1080,12.7064803049555,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0787,NA
+"SLA",29589,160,NA,NA,NA,NA,"00:00:00",NA,1076,12.8205128205128,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.078,NA
+"SLA",29612,160,NA,NA,NA,NA,"00:00:00",NA,39636,13.0039011703511,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0769,NA
+"SLA",29634,160,NA,NA,NA,NA,"00:00:00",NA,1080,13.1578947368421,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.076,NA
+"SLA",29720,160,NA,NA,NA,NA,"00:00:00",NA,1070,14.1043723554302,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0709,NA
+"SLA",29721,160,NA,NA,NA,NA,"00:00:00",NA,1072,14.1043723554302,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0709,NA
+"SLA",29743,160,NA,NA,NA,NA,"00:00:00",NA,1077,14.3472022955524,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0697,NA
+"SLA",29889,160,NA,NA,NA,NA,"00:00:00",NA,1076,15.8982511923688,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.0629,NA
+"SLA",44174,563,863,1675,"observational",NA,"00:00:00",NA,2860,14.9287060014314,"SE",0.222872557221372,3,"LMA",NA,175.618511,-40.348268,TRUE,TRUE,0.067,0.001
+"SLA",44716,603,796,1779,"observational",NA,"00:00:00",NA,1080,15.2643920978225,NA,0.560439721925181,3,"LMA",NA,-71.288077,44.06464,TRUE,FALSE,0.0656,0.0024
+"SLA",29190,160,NA,NA,NA,NA,"00:00:00",NA,2864,9.80392156862745,NA,NA,NA,"LMA",NA,NA,NA,NA,NA,0.102,NA
+"c2n_leaf",39568,441,674,1403,"Observational",NA,"00:00:00",NA,1080,22,NA,NA,NA,"c2n_leaf",NA,-147.87,64.82,TRUE,NA,22,NA
+"c2n_leaf",39570,441,674,1403,"Observational",NA,"00:00:00",NA,39387,26,NA,NA,NA,"c2n_leaf",NA,-147.87,64.82,TRUE,NA,26,NA
+"c2n_leaf",37764,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,21.3338,NA,4.5159,9,"c2n_leaf",6,NA,NA,TRUE,NA,21.3338,4.5159
+"c2n_leaf",37785,381,602,1220,"observational",2010-08-01 00:00:00,"00:00:00",NA,1072,16.8929,NA,5.7037,9,"c2n_leaf",8,NA,NA,TRUE,NA,16.8929,5.7037
+"c2n_leaf",37806,381,602,1220,"observational",2010-09-01 00:00:00,"00:00:00",NA,1072,13.0954,NA,0.7344,9,"c2n_leaf",9,NA,NA,TRUE,NA,13.0954,0.7344
+"c2n_leaf",24410,107,453,136,"Unfertilized",2002-10-15 00:00:00,"00:00:00",NA,2864,14.9190369438446,"SE",0.427109222094264,3,"leafN",10,-116.6,53.9,TRUE,NA,3.22,0.092
+"c2n_leaf",24411,107,453,137,"Fertilization_N8",2002-10-15 00:00:00,"00:00:00",NA,2864,15.0194517205408,"SE",0.541605247664361,3,"leafN",10,-116.6,53.9,FALSE,NA,3.2,0.115
+"c2n_leaf",24412,107,453,138,"Fertilization_N16",2002-10-15 00:00:00,"00:00:00",NA,2864,14.8267945830586,"SE",0.421835725917432,3,"leafN",10,-116.6,53.9,FALSE,NA,3.24,0.092
+"c2n_leaf",30562,160,NA,NA,NA,NA,"00:00:00",NA,2864,11.1111111111111,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,4.32,NA
+"c2n_leaf",24353,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",179,2955,24.6153846153846,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.95,NA
+"c2n_leaf",24359,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",255,2952,33.8028169014085,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.42,NA
+"c2n_leaf",24360,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",256,2952,32,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.5,NA
+"c2n_leaf",24361,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",179,2955,35.8208955223881,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.34,NA
+"c2n_leaf",24367,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",255,2952,27.1186440677966,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.77,NA
+"c2n_leaf",24368,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",257,2952,27.906976744186,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.72,NA
+"c2n_leaf",24369,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",179,2955,31.1688311688312,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.54,NA
+"c2n_leaf",24375,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",255,2952,20.8695652173913,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.3,NA
+"c2n_leaf",24376,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",258,2952,22.0183486238532,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.18,NA
+"c2n_leaf",24377,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",179,2955,23.4146341463415,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.05,NA
+"c2n_leaf",24383,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",255,2952,25.8064516129032,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.86,NA
+"c2n_leaf",24384,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",259,2952,28.7425149700599,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.67,NA
+"c2n_leaf",24385,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",179,2955,24.6153846153846,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.95,NA
+"c2n_leaf",24391,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",255,2952,24.4897959183673,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.96,NA
+"c2n_leaf",24392,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",260,2952,23.6453201970443,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.03,NA
+"c2n_leaf",24393,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",179,2955,23.4146341463415,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.05,NA
+"c2n_leaf",24399,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",255,2952,34.5323741007194,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.39,NA
+"c2n_leaf",24400,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",261,2952,36.6412213740458,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.31,NA
+"c2n_leaf",24401,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2860,13.9952436618218,"SE",0.122386976239294,4,"leafN",6,1.87,47.77,TRUE,NA,3.43,0.03
+"c2n_leaf",24402,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2860,11.8530118053613,"SE",0.11705421320506,4,"leafN",6,7.67,44.7,TRUE,NA,4.05,0.04
+"c2n_leaf",24403,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2579,15.64582453233,"SE",0.408356834257203,4,"leafN",6,1.87,47.77,TRUE,NA,3.07,0.08
+"c2n_leaf",24404,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2579,15.419607125605,"SE",1.15140152287418,4,"leafN",6,7.67,44.7,TRUE,NA,3.13,0.23
+"c2n_leaf",24405,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2866,16.43863613284,"SE",0.0675337715844496,4,"leafN",6,1.87,47.77,TRUE,NA,2.92,0.012
+"c2n_leaf",24406,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2866,13.9553804044193,"SE",0.162271819003914,4,"leafN",6,7.67,44.7,TRUE,NA,3.44,0.04
+"c2n_leaf",24407,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,1072,15.005931376681,"SE",1.23565263373682,4,"leafN",6,1.87,47.77,TRUE,NA,3.22,0.26
+"c2n_leaf",24408,104,449,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2955,17.7913432662155,"SE",1.19711499152301,4,"leafN",6,1.87,47.77,TRUE,NA,2.71,0.18
+"c2n_leaf",24409,104,450,359,"Observational",2005-06-15 00:00:00,"00:00:00",NA,2955,14.7116725006058,"SE",1.81193511749684,4,"leafN",6,7.67,44.7,TRUE,NA,3.31,0.39
+"c2n_leaf",38814,422,637,1326,"Ambient",2002-01-01 00:00:00,"00:00:00",NA,1073,17.3287478877973,"SE",0.0625374204169183,3,"leafN",1,11.85,42.616667,TRUE,TRUE,2.77,0.01
+"c2n_leaf",38815,422,637,1327,"Elevated",2002-01-01 00:00:00,"00:00:00",NA,1073,21.42940161455,"SE",1.44739493502242,3,"leafN",1,11.85,42.616667,FALSE,TRUE,2.25,0.15
+"c2n_leaf",38820,422,637,1327,"Elevated",2002-01-01 00:00:00,"00:00:00",NA,2579,20.7889787463475,"SE",0.450413755992991,3,"leafN",1,11.85,42.616667,FALSE,TRUE,2.31,0.05
+"c2n_leaf",38821,422,637,1326,"Ambient",2002-01-01 00:00:00,"00:00:00",NA,2579,18.858753512328,"SE",0.817691428467686,3,"leafN",1,11.85,42.616667,TRUE,TRUE,2.55,0.11
+"c2n_leaf",38826,422,637,1326,"Ambient",2002-01-01 00:00:00,"00:00:00",NA,1069,17.8686322548476,"SE",0.666710921769573,3,"leafN",1,11.85,42.616667,TRUE,TRUE,2.69,0.1
+"c2n_leaf",38827,422,637,1327,"Elevated",2002-01-01 00:00:00,"00:00:00",NA,1069,21.2993182837249,"SE",1.1400582047333,3,"leafN",1,11.85,42.616667,FALSE,TRUE,2.26,0.12
+"c2n_leaf",37701,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,23.8552364797158,NA,4.89745982993509,9,"leafN",6,NA,NA,TRUE,NA,2.0862,0.3784
+"c2n_leaf",37722,381,602,1220,"observational",2010-08-01 00:00:00,"00:00:00",NA,1072,3.79678753684097,NA,13778.3152134205,9,"leafN",8,NA,NA,TRUE,NA,3.0933,0.9431
+"c2n_leaf",37743,381,602,1220,"observational",2010-09-01 00:00:00,"00:00:00",NA,1072,12.9986961299292,NA,1.07422233058916,9,"leafN",9,NA,NA,TRUE,NA,3.7174,0.3012
+"c2n_leaf",30919,160,NA,NA,NA,NA,"00:00:00",NA,1080,18.4615384615385,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.6,NA
+"c2n_leaf",30967,160,NA,NA,NA,NA,"00:00:00",NA,39636,19.1616766467066,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.505,NA
+"c2n_leaf",30975,160,NA,NA,NA,NA,"00:00:00",NA,1076,19.2,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.5,NA
+"c2n_leaf",31033,160,NA,NA,NA,NA,"00:00:00",NA,1072,19.9170124481328,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.41,NA
+"c2n_leaf",31037,160,NA,NA,NA,NA,"00:00:00",NA,1077,19.9750312109863,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.403,NA
+"c2n_leaf",31041,160,NA,NA,NA,NA,"00:00:00",NA,1072,20,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.4,NA
+"c2n_leaf",31074,160,NA,NA,NA,NA,"00:00:00",NA,1072,20.3389830508475,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.36,NA
+"c2n_leaf",31084,160,NA,NA,NA,NA,"00:00:00",NA,1069,20.4255319148936,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.35,NA
+"c2n_leaf",31179,160,NA,NA,NA,NA,"00:00:00",NA,1080,21.7194570135747,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.21,NA
+"c2n_leaf",31195,160,NA,NA,NA,NA,"00:00:00",NA,1080,21.8181818181818,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.2,NA
+"c2n_leaf",31227,160,NA,NA,NA,NA,"00:00:00",NA,39636,22.3255813953488,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2.15,NA
+"c2n_leaf",31373,160,NA,NA,NA,NA,"00:00:00",NA,1070,24,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,2,NA
+"c2n_leaf",31418,160,NA,NA,NA,NA,"00:00:00",NA,1080,24.7422680412371,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.94,NA
+"c2n_leaf",31460,160,NA,NA,NA,NA,"00:00:00",NA,1070,25.2631578947368,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.9,NA
+"c2n_leaf",31491,160,NA,NA,NA,NA,"00:00:00",NA,1080,25.7510729613734,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.864,NA
+"c2n_leaf",31689,160,NA,NA,NA,NA,"00:00:00",NA,1069,28.9156626506024,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.66,NA
+"c2n_leaf",31690,160,NA,NA,NA,NA,"00:00:00",NA,2809,28.9156626506024,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.66,NA
+"c2n_leaf",44082,563,863,1675,"observational",NA,"00:00:00",NA,2860,11.6983535362722,"SE",0.212739544378257,3,"leafN",NA,175.618511,-40.348268,TRUE,TRUE,4.1045,0.0746
+"c2n_leaf",44733,603,796,1779,"observational",NA,"00:00:00",NA,1080,20.8808276172521,NA,2.03557715399792,5,"leafN",NA,-71.288077,44.06464,TRUE,FALSE,2.32,0.22
+"c2n_leaf",24344,97,441,129,"Unfertilized",1999-10-15 00:00:00,"00:00:00",NA,2860,14.6341463414634,NA,NA,NA,"leafN",10,-95.78,47.9,TRUE,NA,3.28,NA
+"c2n_leaf",24345,97,441,129,"Unfertilized",2000-10-15 00:00:00,"00:00:00",NA,2860,18.9723320158103,NA,NA,NA,"leafN",10,-95.78,47.9,TRUE,NA,2.53,NA
+"c2n_leaf",24346,97,441,129,"Unfertilized",2001-10-15 00:00:00,"00:00:00",NA,2860,18.9723320158103,NA,NA,NA,"leafN",10,-95.78,47.9,TRUE,NA,2.53,NA
+"c2n_leaf",24347,97,441,130,"Fertilization_N50",1999-10-15 00:00:00,"00:00:00",NA,2860,12.972972972973,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,3.7,NA
+"c2n_leaf",24348,97,441,130,"Fertilization_N50",2000-10-15 00:00:00,"00:00:00",NA,2860,15.1419558359621,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,3.17,NA
+"c2n_leaf",24349,97,441,130,"Fertilization_N50",2001-10-15 00:00:00,"00:00:00",NA,2860,17.0212765957447,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,2.82,NA
+"c2n_leaf",24350,97,441,131,"Fertilization_N50",1999-10-15 00:00:00,"00:00:00",NA,2860,12.9380053908356,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,3.71,NA
+"c2n_leaf",24342,76,407,57,"Observational",1972-06-15 00:00:00,"00:00:00",NA,2864,21.2389380530973,NA,NA,NA,"leafN",6,-76.37,41.29,TRUE,NA,2.26,NA
+"c2n_leaf",24343,76,407,57,"Observational",1975-06-15 00:00:00,"00:00:00",NA,2864,26.9662921348315,NA,NA,NA,"leafN",6,-76.37,41.29,TRUE,NA,1.78,NA
+"c2n_leaf",24351,97,441,131,"Fertilization_N50",2000-10-15 00:00:00,"00:00:00",NA,2860,15.0470219435737,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,3.19,NA
+"c2n_leaf",24352,97,441,131,"Fertilization_N50",2001-10-15 00:00:00,"00:00:00",NA,2860,17.4545454545455,NA,NA,NA,"leafN",10,-95.78,47.9,FALSE,NA,2.75,NA
+"c2n_leaf",24354,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",251,2862,25.9459459459459,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.85,NA
+"c2n_leaf",24356,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",252,2877,24.6153846153846,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.95,NA
+"c2n_leaf",24357,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",253,2877,20.6896551724138,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.32,NA
+"c2n_leaf",24358,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",254,2877,22.0183486238532,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.18,NA
+"c2n_leaf",24436,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",230,2862,22.4299065420561,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.14,NA
+"c2n_leaf",24437,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",231,2862,28.9156626506024,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.66,NA
+"c2n_leaf",31688,160,NA,NA,NA,NA,"00:00:00",NA,2864,28.9156626506024,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.66,NA
+"c2n_leaf",31918,160,NA,NA,NA,NA,"00:00:00",NA,2864,34.5323741007194,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,1.39,NA
+"c2n_leaf",32496,160,NA,NA,NA,NA,"00:00:00",NA,2864,96,NA,NA,NA,"leafN",NA,NA,NA,NA,NA,0.5,NA
+"c2n_leaf",24362,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",251,2862,33.3333333333333,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.44,NA
+"c2n_leaf",24364,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",252,2877,43.2432432432432,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.11,NA
+"c2n_leaf",24365,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",253,2877,23.1884057971015,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.07,NA
+"c2n_leaf",24366,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",254,2877,24.3654822335025,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.97,NA
+"c2n_leaf",24370,102,445,88,"Observational",1997-06-15 00:00:00,"00:00:00",251,2862,32,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.5,NA
+"c2n_leaf",24372,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",252,2877,20.4255319148936,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.35,NA
+"c2n_leaf",24373,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",253,2877,20,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.4,NA
+"c2n_leaf",24374,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",254,2877,18.1818181818182,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.64,NA
+"c2n_leaf",24378,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",251,2862,23.1884057971015,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.07,NA
+"c2n_leaf",24380,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",252,2877,23.6453201970443,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.03,NA
+"c2n_leaf",24381,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",253,2877,23.4146341463415,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.05,NA
+"c2n_leaf",24382,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",254,2877,22.9665071770335,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.09,NA
+"c2n_leaf",24386,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",251,2862,25.8064516129032,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.86,NA
+"c2n_leaf",24388,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",252,2877,30.188679245283,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.59,NA
+"c2n_leaf",24389,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",253,2877,23.4146341463415,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.05,NA
+"c2n_leaf",24390,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",254,2877,23.1884057971015,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.07,NA
+"c2n_leaf",24394,102,445,88,"Observational",2001-06-15 00:00:00,"00:00:00",251,2862,22.9665071770335,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.09,NA
+"c2n_leaf",24396,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",252,2877,34.7826086956522,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.38,NA
+"c2n_leaf",24397,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",253,2877,35.8208955223881,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.34,NA
+"c2n_leaf",24398,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",254,2877,32,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.5,NA
+"c2n_leaf",24371,102,445,88,"Observational",1998-06-15 00:00:00,"00:00:00",99,2862,20.1680672268908,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,2.38,NA
+"c2n_leaf",24379,102,445,88,"Observational",1999-06-15 00:00:00,"00:00:00",99,2862,24.4897959183673,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.96,NA
+"c2n_leaf",24387,102,445,88,"Observational",2000-06-15 00:00:00,"00:00:00",99,2862,25.531914893617,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.88,NA
+"c2n_leaf",24395,102,445,88,"Observational",2002-06-15 00:00:00,"00:00:00",99,2862,31.3725490196078,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.53,NA
+"c2n_leaf",24355,102,445,88,"Observational",1995-06-15 00:00:00,"00:00:00",99,2862,26.5193370165746,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.81,NA
+"c2n_leaf",24363,102,445,88,"Observational",1996-06-15 00:00:00,"00:00:00",99,2862,39.6694214876033,NA,NA,NA,"leafN",6,13.22,52.14,TRUE,NA,1.21,NA
+"c2n_leaf",38489,414,624,1310,"ambient CO2 low temp",1998-01-01 00:00:00,"00:00:00",NA,1080,13.0112062656972,"SE",0.709202958677147,NA,"leafN",1,-93.18,44.98,TRUE,TRUE,3.7,0.2
+"c2n_leaf",38491,414,624,1312,"ambient CO2 medium temp",1998-01-01 00:00:00,"00:00:00",NA,1080,11.8220098054275,"SE",1.18776043804782,NA,"leafN",1,-93.18,44.98,FALSE,TRUE,4.1,0.4
+"c2n_leaf",38492,414,624,1314,"ambient CO2 high temp",1998-01-01 00:00:00,"00:00:00",NA,1080,9.06955749211816,"SE",0.343552788283908,NA,"leafN",1,-93.18,44.98,FALSE,TRUE,5.3,0.2
+"c2n_leaf",38493,414,624,1311,"elevated CO2 low temp",1998-01-01 00:00:00,"00:00:00",NA,1080,11.7710010731148,"SE",0.875100939461816,NA,"leafN",1,-93.18,44.98,FALSE,TRUE,4.1,0.3
+"c2n_leaf",38494,414,624,1313,"elevated CO2 medium temp",1997-12-31 06:00:00,"00:00:00",NA,1080,15.0001481414545,"SE",0.0468591693780774,NA,"leafN",12,-93.18,44.98,FALSE,TRUE,3.2,0.01
+"c2n_leaf",38495,414,624,1315,"elevated CO2 high temp",1998-01-01 00:00:00,"00:00:00",NA,1080,14.0130290413852,"SE",2.14368556623307,NA,"leafN",1,-93.18,44.98,FALSE,TRUE,3.5,0.5
+"c2n_leaf",38668,415,630,1316,"Observational",NA,"00:00:00",NA,1072,20.3389830508475,NA,NA,NA,"leafN",NA,-89.4293,43.0399,TRUE,FALSE,2.36,NA
+"c2n_leaf",38673,415,630,1316,"Observational",NA,"00:00:00",NA,1080,21.7194570135747,NA,NA,NA,"leafN",NA,-89.4293,43.0399,TRUE,FALSE,2.21,NA
+"c2n_leaf",38859,425,311,1333,"Elevated CO2 high light",1996-01-01 00:00:00,"00:00:00",NA,1080,17.0813617327844,"SE",0.96110395927052,32,"leafN",1,-89.423525,43.077455,FALSE,TRUE,2.8189,0.1572
+"c2n_leaf",38854,425,311,1330,"Ambient CO2 low light",1996-01-01 00:00:00,"00:00:00",NA,1080,12.6658164035612,"SE",0.847976701180535,32,"leafN",1,-89.423525,43.077455,TRUE,TRUE,3.8065,0.2516
+"c2n_leaf",38856,425,311,1331,"Ambient CO2 high light",1996-01-01 00:00:00,"00:00:00",NA,1080,14.036080359077,"SE",0.778864490310117,32,"leafN",1,-89.423525,43.077455,FALSE,TRUE,3.4302,0.1887
+"c2n_leaf",38858,425,311,1332,"Elevated CO2 low light",1996-01-01 00:00:00,"00:00:00",NA,1080,14.1627873486976,"SE",0.793078672071728,32,"leafN",1,-89.423525,43.077455,FALSE,TRUE,3.3997,0.1887
+"c2n_leaf",24419,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",92,2860,21.1453744493392,NA,NA,4,"leafN",6,-92.77,39.02,NA,NA,2.27,NA
+"c2n_leaf",24420,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",93,2860,19.9170124481328,NA,NA,4,"leafN",6,-92.77,39.02,NA,NA,2.41,NA
+"c2n_leaf",24421,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",94,1072,17.5182481751825,NA,NA,4,"leafN",6,-92.77,39.02,NA,NA,2.74,NA
+"c2n_leaf",24422,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",95,1072,20.0836820083682,NA,NA,4,"leafN",6,-92.77,39.02,NA,NA,2.39,NA
+"c2n_leaf",24423,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",96,1072,18.1818181818182,NA,NA,4,"leafN",6,-92.77,39.02,NA,NA,2.64,NA
+"c2n_leaf",24424,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",218,2862,25.2631578947368,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.9,NA
+"c2n_leaf",24425,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",219,2862,21.6216216216216,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.22,NA
+"c2n_leaf",24426,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",220,2862,23.3009708737864,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.06,NA
+"c2n_leaf",24427,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",221,2862,26.5193370165746,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.81,NA
+"c2n_leaf",24428,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",222,2862,18.8235294117647,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.55,NA
+"c2n_leaf",24429,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",223,2862,24.3654822335025,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.97,NA
+"c2n_leaf",24430,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",224,2862,26.0869565217391,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.84,NA
+"c2n_leaf",24431,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",225,2862,26.2295081967213,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.83,NA
+"c2n_leaf",24432,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",226,2862,21.9178082191781,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.19,NA
+"c2n_leaf",24433,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",227,2862,26.0869565217391,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.84,NA
+"c2n_leaf",24434,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",228,2862,24.7422680412371,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.94,NA
+"c2n_leaf",24435,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",229,2862,26.6666666666667,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.8,NA
+"c2n_leaf",24438,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",232,2862,23.8805970149254,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.01,NA
+"c2n_leaf",24439,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",233,2862,29.2682926829268,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.64,NA
+"c2n_leaf",24440,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",234,2862,23.7623762376238,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.02,NA
+"c2n_leaf",24441,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",235,2862,25.130890052356,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.91,NA
+"c2n_leaf",24442,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",236,2862,24.3654822335025,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.97,NA
+"c2n_leaf",24443,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",237,2862,29.6296296296296,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.62,NA
+"c2n_leaf",24444,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",238,2862,23.5294117647059,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.04,NA
+"c2n_leaf",24445,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",239,2862,24,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2,NA
+"c2n_leaf",24446,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",240,2862,26.3736263736264,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.82,NA
+"c2n_leaf",24447,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",241,2862,30.7692307692308,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.56,NA
+"c2n_leaf",24448,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",242,2862,26.9662921348315,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.78,NA
+"c2n_leaf",24449,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",243,2862,26.3736263736264,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.82,NA
+"c2n_leaf",24450,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",244,2862,25.9459459459459,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.85,NA
+"c2n_leaf",24451,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",245,2862,25.3968253968254,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.89,NA
+"c2n_leaf",24452,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",246,2862,21.6216216216216,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,2.22,NA
+"c2n_leaf",24453,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",NA,2955,27.906976744186,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.72,NA
+"c2n_leaf",24454,95,439,230,"plant date/fer",1997-06-15 00:00:00,"00:00:00",NA,1072,31.7880794701987,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.51,NA
+"c2n_leaf",24455,95,439,231,"plant date/fer",1996-06-15 00:00:00,"00:00:00",NA,2955,32,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.5,NA
+"c2n_leaf",24456,95,439,231,"plant date/fer",1996-06-15 00:00:00,"00:00:00",NA,1072,32.8767123287671,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.46,NA
+"c2n_leaf",24457,95,439,231,"plant date/fer",1996-06-15 00:00:00,"00:00:00",NA,2862,35.036496350365,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.37,NA
+"c2n_leaf",24458,95,439,231,"plant date/fer",1996-06-15 00:00:00,"00:00:00",NA,2866,32,NA,NA,NA,"leafN",6,-123.3,48.47,FALSE,NA,1.5,NA
+"Vcmax",24823,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",92,2860,44.4040912328931,NA,NA,4,"Vcmax",6,-92.77,39.02,NA,NA,44.78,NA
+"Vcmax",24824,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",93,2860,44.1561898749605,NA,NA,4,"Vcmax",6,-92.77,39.02,NA,NA,44.53,NA
+"Vcmax",24825,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",94,1072,56.04,NA,NA,4,"Vcmax",6,-92.77,39.02,NA,NA,56.04,NA
+"Vcmax",24826,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",95,1072,62.56,NA,NA,4,"Vcmax",6,-92.77,39.02,NA,NA,62.56,NA
+"Vcmax",24827,63,391,141,NA,2004-06-15 00:00:00,"00:00:00",96,1072,52.65,NA,NA,4,"Vcmax",6,-92.77,39.02,NA,NA,52.65,NA
+"Vcmax",24828,75,399,135,"Observational",1996-06-15 00:00:00,"00:00:00",113,2068,37,NA,NA,NA,"Vcmax",6,NA,NA,TRUE,NA,37,NA
+"Vcmax",24829,75,399,135,"Observational",1996-06-15 00:00:00,"00:00:00",99,2862,44,NA,NA,NA,"Vcmax",6,NA,NA,TRUE,NA,44,NA
+"Vcmax",24830,75,399,135,"Observational",1996-06-15 00:00:00,"00:00:00",107,2866,45,NA,NA,NA,"Vcmax",6,NA,NA,TRUE,NA,45,NA
+"Vcmax",24831,75,399,135,"Observational",1996-06-15 00:00:00,"00:00:00",277,2867,47,NA,NA,NA,"Vcmax",6,NA,NA,TRUE,NA,47,NA
+"Vcmax",24832,75,399,135,"Observational",1996-06-15 00:00:00,"00:00:00",110,2579,48,NA,NA,NA,"Vcmax",6,NA,NA,TRUE,NA,48,NA
+"Vcmax",24833,96,440,41,"Observational",1987-06-15 00:00:00,"00:00:00",99,2862,27.2,NA,NA,NA,"Vcmax",6,2.33,48.83,TRUE,NA,27.2,NA
+"Vcmax",24834,96,440,41,"Observational",1987-06-15 00:00:00,"00:00:00",278,2862,25.8,NA,NA,NA,"Vcmax",6,2.33,48.83,TRUE,NA,25.8,NA
+"Vcmax",24835,96,440,41,"Observational",1987-06-15 00:00:00,"00:00:00",212,2860,25,NA,NA,NA,"Vcmax",6,2.33,48.83,TRUE,NA,25,NA
+"Vcmax",24836,96,440,41,"Observational",1987-06-15 00:00:00,"00:00:00",113,2953,17.5,NA,NA,NA,"Vcmax",6,2.33,48.83,TRUE,NA,17.5,NA
+"Vcmax",24837,96,440,41,"Observational",1987-06-15 00:00:00,"00:00:00",114,2953,19.2,NA,NA,NA,"Vcmax",6,2.33,48.83,TRUE,NA,19.2,NA
+"Vcmax",24838,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,46.2,NA,1.14,4,"Vcmax",7,-3.15,51.97,TRUE,NA,46.2,1.14
+"Vcmax",24839,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,52.9,NA,1.34,4,"Vcmax",7,-3.15,51.97,TRUE,NA,52.9,1.34
+"Vcmax",24840,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,42.5,NA,2.45,4,"Vcmax",7,-3.15,51.97,TRUE,NA,42.5,2.45
+"Vcmax",24841,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,51.8,NA,2.22,4,"Vcmax",7,-3.15,51.97,TRUE,NA,51.8,2.22
+"Vcmax",24842,100,443,87,"Observational",1998-07-15 00:00:00,"00:00:00",NA,2864,50,NA,1.65,4,"Vcmax",7,-3.15,51.97,TRUE,NA,50,1.65
+"Vcmax",25388,51,NA,1,"observational",NA,"00:00:00",NA,1072,59,"SE",2,2,"Vcmax",NA,NA,NA,TRUE,NA,59,2
+"Vcmax",25389,51,NA,1,"observational",NA,"00:00:00",NA,2808,43,"SE",5,2,"Vcmax",NA,NA,NA,TRUE,NA,43,5
+"Vcmax",25390,51,NA,1,"observational",NA,"00:00:00",NA,2809,111,"SE",7,1,"Vcmax",NA,NA,NA,TRUE,NA,111,7
+"Vcmax",25391,51,NA,1,"observational",NA,"00:00:00",NA,1076,72,"SE",4,1,"Vcmax",NA,NA,NA,TRUE,NA,72,4
+"Vcmax",25392,51,NA,1,"observational",NA,"00:00:00",NA,1080,24,"SE",2,1,"Vcmax",NA,NA,NA,TRUE,NA,24,2
+"Vcmax",37512,381,602,1220,"observational",2010-06-01 00:00:00,"00:00:00",NA,1072,78.4088,NA,14.0982,5,"Vcmax",6,NA,NA,TRUE,NA,78.4088,14.0982
+"Vcmax",39547,441,674,1403,"Observational",NA,"00:00:00",NA,1080,42,NA,NA,NA,"Vcmax",NA,-147.87,64.82,TRUE,NA,42,NA
+"Vcmax",39549,441,674,1403,"Observational",NA,"00:00:00",NA,39387,42,NA,NA,NA,"Vcmax",NA,-147.87,64.82,TRUE,NA,42,NA
+"Vcmax",41497,483,637,1513,"control",2002-06-01 05:00:00,"00:00:00",NA,1069,66.67,NA,3.8,3,"Vcmax",6,11.85,42.616667,TRUE,TRUE,66.67,3.8
+"Vcmax",41498,483,637,1514,"elevated co2",2002-06-01 05:00:00,"00:00:00",NA,1069,60.65,NA,4.9,3,"Vcmax",6,11.85,42.616667,FALSE,TRUE,60.65,4.9
+"Vcmax",41499,483,637,1513,"control",2002-06-01 05:00:00,"00:00:00",NA,2579,67.76,NA,6,3,"Vcmax",6,11.85,42.616667,TRUE,TRUE,67.76,6
+"Vcmax",41500,483,637,1514,"elevated co2",2002-06-01 05:00:00,"00:00:00",NA,2579,48.09,NA,6.6,3,"Vcmax",6,11.85,42.616667,FALSE,TRUE,48.09,6.6
+"Vcmax",41501,483,637,1513,"control",2002-06-01 05:00:00,"00:00:00",NA,1073,72.13,NA,4.9,3,"Vcmax",6,11.85,42.616667,TRUE,TRUE,72.13,4.9
+"Vcmax",41502,483,637,1514,"elevated co2",2002-06-01 05:00:00,"00:00:00",NA,1073,59.02,NA,6.6,3,"Vcmax",6,11.85,42.616667,FALSE,TRUE,59.02,6.6
+"Vcmax",44061,563,863,1675,"observational",NA,"00:00:00",NA,2860,46,"SE",5.8,3,"Vcmax",NA,175.618511,-40.348268,TRUE,TRUE,46,5.8
+"Vcmax",44621,601,852,1764,"ambient CO2/Low Temp",NA,"00:00:00",NA,1080,199,"SE",15,3,"Vcmax",NA,-89.6167,45.667,TRUE,FALSE,199,15
+"Vcmax",44622,601,852,1774,"elevated CO2/Low Temp",NA,"00:00:00",NA,1080,150,"SE",31,3,"Vcmax",NA,-89.6167,45.667,FALSE,FALSE,150,31
+"Vcmax",44623,601,852,1773,"ambient CO2/High Temp",NA,"00:00:00",NA,1080,141,"SE",18,3,"Vcmax",NA,-89.6167,45.667,FALSE,FALSE,141,18
+"Vcmax",44624,601,852,1765,"elevated CO2/High Temp",NA,"00:00:00",NA,1080,172,"SE",8,3,"Vcmax",NA,-89.6167,45.667,FALSE,FALSE,172,8
+"Vcmax",44625,601,852,1764,"ambient CO2/Low Temp",NA,"00:00:00",NA,1080,161,"SE",49,3,"Vcmax",NA,-89.6167,45.667,TRUE,FALSE,161,49
+"Vcmax",44626,601,852,1774,"elevated CO2/Low Temp",NA,"00:00:00",NA,1080,240,"SE",50,3,"Vcmax",NA,-89.6167,45.667,FALSE,FALSE,240,50
+"Vcmax",44627,601,852,1773,"ambient CO2/High Temp",NA,"00:00:00",NA,1080,95,"SE",27,3,"Vcmax",NA,-89.6167,45.667,FALSE,FALSE,95,27
+"Vcmax",50650,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,94.34,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,94.34,NA
+"Vcmax",50651,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,95.1,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,95.1,NA
+"Vcmax",50652,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,111.25,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,111.25,NA
+"Vcmax",50653,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,104.35,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,104.35,NA
+"Vcmax",50654,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,135.24,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,135.24,NA
+"Vcmax",50655,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,120.75,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,120.75,NA
+"Vcmax",50656,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,104.16,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,104.16,NA
+"Vcmax",50657,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,96.65,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,96.65,NA
+"Vcmax",50658,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,113.29,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,113.29,NA
+"Vcmax",50659,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,99.67,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,99.67,NA
+"Vcmax",50660,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,76.69,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,76.69,NA
+"Vcmax",50661,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,100.07,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,100.07,NA
+"Vcmax",50662,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,119,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,119,NA
+"Vcmax",50663,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1072,100.46,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,100.46,NA
+"Vcmax",50702,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,118.47,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,118.47,NA
+"Vcmax",50703,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,139.39,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,139.39,NA
+"Vcmax",50704,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,135.23,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,135.23,NA
+"Vcmax",50705,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,127.33,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,127.33,NA
+"Vcmax",50706,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,136.51,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,136.51,NA
+"Vcmax",50707,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,144.16,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,144.16,NA
+"Vcmax",50708,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,138.77,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,138.77,NA
+"Vcmax",50709,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,146.66,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,146.66,NA
+"Vcmax",50710,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,129.3,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,129.3,NA
+"Vcmax",50711,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,165.06,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,165.06,NA
+"Vcmax",50712,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,144.4,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,144.4,NA
+"Vcmax",50713,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,124.18,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,124.18,NA
+"Vcmax",50714,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,147.59,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,147.59,NA
+"Vcmax",50715,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,134.32,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,134.32,NA
+"Vcmax",50716,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,150.03,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,150.03,NA
+"Vcmax",50717,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,106.25,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,106.25,NA
+"Vcmax",50718,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1072,144.22,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,144.22,NA
+"Vcmax",50770,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,75.25,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,75.25,NA
+"Vcmax",50771,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,81.37,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,81.37,NA
+"Vcmax",50772,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,77.79,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,77.79,NA
+"Vcmax",50773,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,79.01,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,79.01,NA
+"Vcmax",50774,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,68.92,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,68.92,NA
+"Vcmax",50775,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,74.56,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,74.56,NA
+"Vcmax",50776,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,64.67,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,64.67,NA
+"Vcmax",50777,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,79.52,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,79.52,NA
+"Vcmax",50778,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,79.97,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,79.97,NA
+"Vcmax",50779,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,78.05,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,78.05,NA
+"Vcmax",50780,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,73.35,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,73.35,NA
+"Vcmax",50781,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,72.9,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,72.9,NA
+"Vcmax",50782,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,77,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,77,NA
+"Vcmax",50783,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,58.01,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,58.01,NA
+"Vcmax",50784,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,73.66,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,73.66,NA
+"Vcmax",50785,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,76.81,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,76.81,NA
+"Vcmax",50786,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,73.41,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,73.41,NA
+"Vcmax",50787,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1072,68.6,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,68.6,NA
+"Vcmax",50842,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,70.73,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,70.73,NA
+"Vcmax",50843,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,61.97,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,61.97,NA
+"Vcmax",50844,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,101.55,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,101.55,NA
+"Vcmax",50845,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,65.83,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,65.83,NA
+"Vcmax",50846,489,311,1518,"warm temperature regime (25/18)",NA,NA,NA,1080,76.37,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,TRUE,TRUE,76.37,NA
+"Vcmax",50859,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,106.65,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,106.65,NA
+"Vcmax",50860,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,125.15,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,125.15,NA
+"Vcmax",50861,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,151.47,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,151.47,NA
+"Vcmax",50862,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,98.42,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,98.42,NA
+"Vcmax",50863,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,73.77,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,73.77,NA
+"Vcmax",50864,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,79.45,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,79.45,NA
+"Vcmax",50865,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,97.31,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,97.31,NA
+"Vcmax",50866,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,110.71,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,110.71,NA
+"Vcmax",50867,489,311,1519,"hot temperature regime (30/23)",NA,NA,NA,1080,132.69,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,132.69,NA
+"Vcmax",50893,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,44.23,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,44.23,NA
+"Vcmax",50894,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,62.05,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,62.05,NA
+"Vcmax",50895,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,54.83,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,54.83,NA
+"Vcmax",50896,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,54.86,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,54.86,NA
+"Vcmax",50897,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,45.56,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,45.56,NA
+"Vcmax",50898,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,78.94,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,78.94,NA
+"Vcmax",50899,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,65.53,NA,NA,2,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,65.53,NA
+"Vcmax",50900,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,44.59,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,44.59,NA
+"Vcmax",50901,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,33.96,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,33.96,NA
+"Vcmax",50902,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,52.07,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,52.07,NA
+"Vcmax",50903,489,311,1517,"cool temperature regime (20/13)",NA,NA,NA,1080,49.52,NA,NA,1,"Vcmax",NA,-89.423525,43.077455,FALSE,TRUE,49.52,NA

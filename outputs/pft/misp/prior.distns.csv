@@ -1,0 +1,9 @@
+"distn","parama","paramb","n"
+"lnorm",8.4,0.9,0
+"weibull",2.06,19,125
+"lnorm",1.24,0.28,2
+"lnorm",0.632,0.65,32
+"beta",36,54,NA
+"gamma",5,10,NA
+"lnorm",3.75,0.3,12
+"gamma",4.18,0.13,95

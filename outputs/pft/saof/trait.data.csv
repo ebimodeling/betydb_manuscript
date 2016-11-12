@@ -1,0 +1,9 @@
+".id","id","citation_id","site_id","treatment_id","name","date","time","cultivar_id","specie_id","mean","statname","stat","n","vname","month","lon","lat","control","greenhouse","mean_unconverted","stat_unconverted"
+"SLA",26498,325,511,1045,"high irrigation",1996-01-23,"00:00:00",NA,33738,9.71,NA,NA,NA,"SLA",1,146.191389,-18.858889,TRUE,FALSE,9.71,NA
+"SLA",26499,325,511,1047,"low irrigation",1996-01-23,"00:00:00",NA,33738,9.3,NA,NA,NA,"SLA",1,146.191389,-18.858889,FALSE,FALSE,9.3,NA
+"SLA",26500,325,511,1045,"high irrigation",1996-05-07,"00:00:00",NA,33738,9.7,NA,NA,NA,"SLA",5,146.191389,-18.858889,TRUE,FALSE,9.7,NA
+"SLA",26501,325,511,1046,"medium irrigation",1996-05-07,"00:00:00",NA,33738,9.9,NA,NA,NA,"SLA",5,146.191389,-18.858889,FALSE,FALSE,9.9,NA
+"SLA",26502,325,511,1047,"low irrigation",1996-05-07,"00:00:00",NA,33738,8.83,NA,NA,NA,"SLA",5,146.191389,-18.858889,FALSE,FALSE,8.83,NA
+"SLA",26503,325,511,1045,"high irrigation",1996-08-25,"00:00:00",NA,33738,8.7,NA,NA,NA,"SLA",8,146.191389,-18.858889,TRUE,FALSE,8.7,NA
+"SLA",26504,325,511,1046,"medium irrigation",1996-08-25,"00:00:00",NA,33738,7.27,NA,NA,NA,"SLA",8,146.191389,-18.858889,FALSE,FALSE,7.27,NA
+"SLA",26505,325,511,1047,"low irrigation",1996-08-25,"00:00:00",NA,33738,7.42,NA,NA,NA,"SLA",8,146.191389,-18.858889,FALSE,FALSE,7.42,NA
