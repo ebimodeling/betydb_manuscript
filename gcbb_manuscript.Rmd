@@ -7,6 +7,11 @@ output: github_document
 knitr::opts_chunk$set(cache = TRUE, autodep=TRUE, echo = FALSE, message = FALSE, results='hide')
 ```
 
+```sh
+git checkout tags/1.4.7 -b 1.4.7
+./scripts/build.sh
+```
+
 ## Trait Meta Analysis
 
 1. Estimate parameters for multiple crops
@@ -57,7 +62,7 @@ d <- list(host = 'ebi-forecast.igb.illinois.edu',
 bety <- src_postgres(host = d$host, user = d$user, password = d$password, dbname = d$dbname)
 
 traits_yields_view <- tbl(
-  bety, sql("select * from traits_and_yields_view_private where checked > -1 and access_level = 4")) %>% collect
+  bety, sql("select * from traits_and_yields_view_private where checked > -1")) %>% collect
 
 ```
 
@@ -156,8 +161,26 @@ trait_summary_full <- genera_x_traits  %>%
 
 
 ```{r trait-plot}
-devtools::install_github("infotroph/ggplotTicks")
+#devtools::install_github("infotroph/ggplotTicks")
 library(ggplotTicks)
+gcbb_plot_theme <- function(p){ 
+  require(ggplotTicks)
+  newp <- p + scale_colour_brewer(palette = "Set1", labels = c('Miscanthus', 'Panicum (Switchgrass)')) +
+#  scale_y_continuous(limits = c(0, 60), breaks = c(0, 20, 40, 60)) +
+  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+        line = element_line(color = 'black'),
+        axis.title = element_text(vjust = 0.1),
+        panel.grid = element_blank(),
+        axis.ticks.length = unit(-0.1, 'cm'),
+        axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
+        axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
+        #panel.grid = element_blank(),
+        #panel.border = element_blank(),
+        strip.background = element_blank(), #http://docs.ggplot2.org/current/facet_wrap.html
+        strip.text = element_text(size = 8))
+  newp <- mirror_ticks(newp)
+  return(newp)
+}
 
 trait_plot <- ggplot(data = trait_summary_full) +
   geom_bar(aes(genus, n, fill = label), stat = "identity", position = "dodge", width = 0.75) +
@@ -235,7 +258,6 @@ trait_hist2 <- trait_hist +
         axis.ticks.length = unit(-0.1, 'cm'),
         axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
         axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
-        
         legend.key.size = unit(3, 'mm'),
         legend.key = element_rect(size = 0),
         legend.title = element_blank(),
@@ -271,9 +293,10 @@ settings$pfts <- get.trait.data(pfts = settings$pfts,
 
 
 ```{r trait-meta-analysis}
+require(plyr)
 settings$database$bety$write = TRUE
 run.meta.analysis(pfts = settings$pfts, iterations = 10000, 
-                  dbfiles = settings$run$dbfiles, 
+                  dbfiles = settings$database$dbfiles, 
                   database = settings$database$bety)  
 
 get.parameter.samples(pfts=settings$pfts)
@@ -555,7 +578,7 @@ grass_yields <- yields %>%
   filter(!duplicated(.))
 
 save(grass_yields, file = "~/dev/bety_manuscript/data/grass_yields.RData")
-
+# load("~/dev/bety_manuscript/data/grass_yields.RData")
 g <- grass_yields %>% setDT 
 if(nrow(g[is.na(age) & age < 0])>0) stop()
 
@@ -731,12 +754,19 @@ load("~/dev/bety_manuscript/data/daymet_vars.RData")
 ```{r}
 met <- cruncep_vars %>% inner_join(daymet_vars, by = c('site_id','year'))
 require(ggplot2)
-ggplot(data = met) + 
-  geom_point(aes(cruncep_gdd, daymet_gdd, group = site_id))
+theme_set(theme_bw())
 
-ggplot(data = met) + 
-  geom_point(aes(cruncep_precip, daymet_precip, group = site_id))
+ggplot(data = met, aes(cruncep_gdd, daymet_gdd), alpha = 0.5) + 
+  geom_point() +   
+  geom_smooth(method = 'lm', formula = y ~ x -1, size = 0.9) +
+  scale_x_continuous(limits = c(0, 4500)) +
+  scale_y_continuous(limits = c(0, 4500))
 
+ggplot(data = met, aes(cruncep_precip, daymet_precip), alpha = 0.3) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', formula = y ~ x -1, size = 0.9) + 
+  scale_x_continuous(limits = c(0, 2100)) +
+  scale_y_continuous(limits = c(0, 2100))
 ggplot(data = met) + 
   geom_point(aes(summer_precip.x, summer_precip.y, group = site_id))
 
@@ -829,14 +859,15 @@ library(gridExtra)
 
 ```
 
+#### Miscanthus Switchgrass Yield Meta-analysis
 
-
-```{r}
+```{r misp-pavi-yield-ma}
 
 #library(lmerTest)
 summary(pavi_re)
 summary(misp_re)
 
+save(pavi_re, misp_re, file = '~/dev/gcbb_manuscript/data/misp_pavi_yield_ma.RData')
 texreg(l = list(misp_re, pavi_re),single.row = TRUE,
        digits = 4, dcolumn = TRUE,
        custom.model.names = c('Miscanthus', 'Switchgrass'), custom.coef.names = c('Intercept', 'Nitrogen Fertilization', 'Summer Precipitation', 'Growing Degree Days', "Stand Age"))
@@ -872,51 +903,56 @@ eff <- list(nrate = rbind(pavi_effects$nrate, misp_effects$nrate),
             summer_precip = rbind(pavi_effects$summer_precip, misp_effects$summer_precip),
             gdd = rbind(pavi_effects$gdd, misp_effects$gdd),
             age = rbind(pavi_effects$age, misp_effects$age))
+```
 
+```{r yield_ma_plots, fig.width=8, fig.height=2}
 p1 <-  ggplot(data = ggg, aes(x = nrate, color = genus)) +
   geom_point(aes(x = jitter(nrate, 20), y = mean), alpha = 0.25, size = 0.5) +
   geom_smooth(data = eff$nrate, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
   #geom_smooth(data = eff$nrate, aes(y = fit + se), method = 'lm', size= 0.5, linetype = 2, fullrange = FALSE) +
   #geom_smooth(data = eff$nrate, aes(y = fit - se), method = 'lm', size= 0.5, linetype = 2, fullrange = FALSE) + 
-  scale_colour_brewer(palette = "Set1", labels = c('Miscanthus', 'Switchgrass')) +
   ylab(expression(Yield~~"(Mg "*ha^"-1"*yr^"-1"*")")) +
   xlab(expression("Nitrogen Fertilization Rate"~~"(kg "*ha^"-1"*yr^"-1"*")")) + 
-  xlim(0,250)+
-  theme(axis.text = element_text(size = 18), axis.title = element_text(size = 18), legend.position = 'none')
+  xlim(0,250)
 
 p2 <-  ggplot(data = ggg, aes(x = summer_precip, color = genus)) +
   geom_point(aes(y = mean), alpha = 0.25, size = 0.5) +
   geom_smooth(data = eff$summer_precip, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
-  scale_colour_brewer(palette = "Set1") +
   ylab(" ") +
-  xlab(expression("Growing Season Precipitation"~~"(mm "*yr^"-1"*")")) +
-  theme(axis.text = element_text(size = 18), axis.title = element_text(size = 18), legend.position = 'none')
+  xlab(expression("Growing Season Precipitation"~~"(mm "*yr^"-1"*")"))
 
 p3 <-  ggplot(data = ggg, aes(x = gdd, color = genus)) +
   geom_point(aes(y = mean), alpha = 0.25, size = 0.5) +
   geom_smooth(data = eff$gdd, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
   scale_colour_brewer(palette = "Set1") +
-  ylab(" ") +
-  xlab(expression(paste("Growing Degree Days", ~~(degree*C)))) +
-  theme(axis.text = element_text(size = 18), axis.title = element_text(size = 18), legend.position = 'none')
+  ylab(" ") + 
+  scale_x_continuous(name = expression(paste("Growing Degree Days", ~~(degree*C))))
 
 p4 <- ggplot(data = ggg, aes(x = age, color = genus)) +
   geom_point(aes(x = jitter(age, 0.25), y = mean), alpha = 0.25, size = 0.5) +
   geom_smooth(data = eff$age, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
-  scale_colour_brewer(palette = "Set1") + 
-  ylab(" ") + 
-  xlab("Stand Age (yr)") + 
-  xlim(0, 10) + 
-  theme(axis.text = element_text(size = 18), axis.title = element_text(size = 18), legend.position = c(0.75,0.9), legend.title = element_blank(), legend.text = element_text(size = 18))
-
-p <- list(p1, p2, p3, p4)
-
-pp <- plot_grid(plotlist = p, nrow = 1)
+  ylab(" ") +
+  scale_x_continuous(name = 'Stand Age (yr)', limits = c(0, 10), breaks = c(0,3,6,9)) 
 
 
-ggsave(plot = pp, 
-       filename = 'figures/yield_ma_plots.png', 
-       width = 20, height = 4, dpi = 200)
+
+
+p <- list(p1, p2, p3)
+
+p <- lapply(p, function(x) { x + theme(legend.position = 'none')})
+p[[4]] <- p4 + 
+  theme(legend.key.size = unit(3, 'mm'),
+        legend.key = element_rect(size = 0),
+        legend.title = element_blank(),
+        legend.position = c(0.7,0.9))
+
+pp <- lapply(p, gcbb_plot_theme)
+
+ppp <- cowplot::plot_grid(plotlist = ppp, nrow = 1)
+ppp
+ggsave(plot = ppp, 
+      filename = 'figures/yield_ma_plots.png', 
+      width = 400, height = 100, dpi = 300, units = 'mm')
 
 ```
 
