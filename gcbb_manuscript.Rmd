@@ -291,7 +291,7 @@ ggplot() +
 bigplot <- cowplot::plot_grid(plotlist = c(list(trait_hist3), label_plots), ncol = 1)
 ggsave(plot = bigplot, 
       filename = 'figures/trait_histograms_by_genus.svg', 
-      width = 169, height = 600, dpi = 300, units = 'mm')
+      width = 169, dpi = 300, units = 'mm')
 
 
 ```
