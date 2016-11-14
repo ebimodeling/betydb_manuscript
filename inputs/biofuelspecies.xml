@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <pecan>
- <outdir>/home/dlebauer/dev/gcbb_manuscript/outputs</outdir>
+ <outdir>"~/dev/gcbb_manuscript/outputs"</outdir>
 
  <pfts>
   <pft>
@@ -21,12 +21,16 @@
  </pfts>
 
  <database>
-  <driver>PostgreSQL</driver>
-  <username>bety</username>
-  <password>bety</password>
-  <dbname>ebi_production</dbname>
-  <host>ebi-forecast.igb.illinois.edu</host>
-  <write>FALSE</write>
+   <bety>
+    <driver>PostgreSQL</driver>
+    <user>bety</user>
+    <password>bety</password>
+    <dbname>bety</dbname>
+    <host>localhost</host>
+    <!-- <dbname>ebi_production</dbname>
+    <host>ebi-forecast.igb.illinois.edu</host>-->
+    <write>FALSE</write>
+   </bety>
  </database>
  <meta.analysis>
   <random.effects>TRUE</random.effects>

@@ -84,7 +84,7 @@ gg <- g %>% gather(trait, mean, -scientificname, na.rm = TRUE) %>% mutate(citati
 
 ```
 
-```{r summary}
+```{r summary, eval=FALSE}
 bety_glopnet <- tbl(
   bety, sql("select * from traits_and_yields_view_private where author = 'Wright'")) %>% collect 
 
@@ -174,8 +174,8 @@ gcbb_plot_theme <- function(p){
         axis.ticks.length = unit(-0.1, 'cm'),
         axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
         axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
-        #panel.grid = element_blank(),
-        #panel.border = element_blank(),
+        panel.grid = element_blank(),
+        panel.border = element_blank(),
         strip.background = element_blank(), #http://docs.ggplot2.org/current/facet_wrap.html
         strip.text = element_text(size = 8))
   newp <- mirror_ticks(newp)
@@ -209,6 +209,7 @@ trait_plot2.1 <- trait_plot2 + theme(legend.key.size = unit(2, 'mm'),
                     legend.position = c(0.85,0.4))
 
 trait_plot3 <- mirror_ticks(trait_plot2.1)
+trait_plot3
 #print(trait_plot)
 ggsave(plot = trait_plot3, 
        filename = 'figures/trait_records_by_genus.png', 
@@ -220,26 +221,26 @@ ggsave(plot = trait_plot3,
 ```{r trait-data-histogram}
 
 T <- traits_yields_view %>% 
-  filter(!is.na(mean) & checked >= 0)
+  filter(!is.na(mean) & checked >= 0) %>% setDT
 
 leafN <- T %>% filter(trait == 'c2n_leaf') %>% mutate(trait = 'leafN', mean = 48/mean)
 yield <- T %>% filter(trait == 'Ayield') %>% mutate(trait = 'Yield')
-sla <- T %>% filter(trait == 'LMA', mean = 1/mean)
+sla1 <- T %>% filter(trait == 'SLA')
+sla2 <- T %>% filter(trait == 'LMA') %>% mutate(mean = 1/mean)
 vmax <- T %>% filter(trait == 'Vcmax') %>% mutate(trait = 'Vmax')
 
-T <- rbind(T, leafN, yield, sla, vmax)
+T <- rbind(T, leafN, yield, sla1, sla2, vmax)
 
 histogram_traits <- c("Yield", "leafN", "LAI", "SLA","Vmax", "Jmax")
 T <- T %>% filter(trait %in% histogram_traits)
 levels(T$trait) <- c("Jmax", "LAI", "Leaf Nitrogen (%)", "Specific Leaf Area (m2/kg)", "Vmax", "Yield (Mg/ha)")
 
 
-T[!genus %in% genera, `:=`(genus = 'Other')]
-T[,`:=`(genus = factor(genus, 
+T <- T %>% mutate(genus = ifelse(genus %in% genera, genus, 'Other'))
+T$genus <- factor(T$genus, 
                        levels = c("Agave", "Miscanthus", "Panicum", "Pinus", "Populus", "Robinia", "Saccharum", "Salix", "Other"),
-                       labels = c("Agave", "Miscanthus", "Panicum (Switchgrass)", "Pinus (Pine)", "Populus (Poplar)", "Robinia (Locust)", "Saccharum (Sugarcane)", "Salix (Willow)", "Other")))]
+                       labels = c("Agave", "Miscanthus", "Panicum (Switchgrass)", "Pinus (Pine)", "Populus (Poplar)", "Robinia (Locust)", "Saccharum (Sugarcane)", "Salix (Willow)", "Other"))
 
-T <- data.frame(T)
 
 trait_hist <- ggplot(data = T) +
   geom_histogram(bins = 25, aes(mean, fill = genus, color = genus)) +
@@ -276,7 +277,7 @@ ggsave(plot = trait_hist3,
 ```
 ## Trait Meta-analysis
 
-```{r ma-data-import}
+```{r ma-data-import, echo=FALSE,message=FALSE,results='hide'}
 ## Import traits
 library(PEcAn.all)
 logger.setQuitOnSevere(severeQuits = FALSE)
@@ -292,7 +293,7 @@ settings$pfts <- get.trait.data(pfts = settings$pfts,
 ```
 
 
-```{r trait-meta-analysis}
+```{r trait-meta-analysis, eval = FALSE}
 require(plyr)
 settings$database$bety$write = TRUE
 run.meta.analysis(pfts = settings$pfts, iterations = 10000, 
@@ -305,13 +306,13 @@ get.parameter.samples(pfts=settings$pfts)
 
 ### Summarize Trait Data
 
-```{r data-contents}
+```{r data-contents, eval = FALSE}
 library(data.table)
 tmpdata <- list()
+settings$outdir <- file.path("~/dev/gcbb_manuscript/outputs/")
 for (i in seq(settings$pfts)){
+  settings$pfts[[i]]$outdir <- file.path("~/dev/gcbb_manuscript/outputs/pft", settings$pfts[[i]]$name)
   pft <- settings$pfts[[i]]
-  print(pft$name)
-  
   tmpdata[[pft$name]] <- cbind(pft = pft$name, fread(file.path(pft$outdir, "trait.data.csv")))
 }
 biofuel.traitdata <- data.table(do.call("rbind", tmpdata))
@@ -327,6 +328,7 @@ pander::pander(biofuel.traitdata[,list(n.obs = sum(n, is.na(n), na.rm = TRUE), n
                                  by = c("variable", "pft")][order(variable)],
                split.tables = 200, round = 2)
 
+save(settings, biofuel.traitdata, file = 'data/data_contents.RData')
 ```
 
 ### Trait Meta-analysis summary
@@ -334,7 +336,7 @@ pander::pander(biofuel.traitdata[,list(n.obs = sum(n, is.na(n), na.rm = TRUE), n
 #### Define Priors
 
 ```{r trait-summary}
-
+load('data/data_contents.RData')
 priors <- NULL
 for(pft in settings$pfts){
   pftname <- pft$name
@@ -393,7 +395,7 @@ vars <- c("SLA", "Vcmax",  "leaf_respiration_rate_m2")#, "stomatal_slope.BB", "c
 
 ```
 
-```{r ma_plots}
+```{r ma_plots, fig.width=8, fig.height=1.5}
 ma.plots <- list()
 
 ts1 <- t[!(pft %in% c('saof', "Miscanthus_x_giganteus")) & param == 'beta.o' & !(variable == 'stomatal_slope.BB') & !prior]
@@ -405,33 +407,38 @@ ts2 <- merge(ts1, n_traits, by = c('variable', 'pft'))
 for(var in vars){
   ma.plots[[var]] <- ggplot(data = ts2[variable == var], aes(pft, y = mean)) + 
     coord_flip() +
-    geom_pointrange(aes(ymin = mean-sd, ymax =  mean + sd), size = 1) +
+    geom_pointrange(aes(ymin = mean-sd, ymax =  mean + sd)) +
     geom_text(aes(pft, y = mean, label = paste0("(", n, ")")), vjust = 2, size =6) +
     expand_limits(x = 0, y = 0) + 
     coord_flip() + xlab("") +
     scale_x_discrete(breaks=c("salix", "populus", "pavi", "misp"),
                      labels=c("Willow", "Poplar", "Switchgrass", "Miscanthus")) +
-    scale_y_continuous(expand = c(0,0))
     theme(legend.position="none")
   
 }
-ma.plots$SLA <- ma.plots$SLA + ylab("SLA \n (m2 / kg)") 
-ma.plots$Vcmax <- ma.plots$Vcmax + ylab("Vcmax / Vpmax at 25C \n (umol CO2 m-2 s-1)")
-ma.plots$leaf_respiration_rate_m2 <- ma.plots$leaf_respiration_rate_m2 + ylab(expression("Leaf Respiration Rate at 25C \n umol CO2 m-2 s-1")
+
+ma.plots$SLA <- ma.plots$SLA + ylab(expression(atop("SLA", group("(",m^2~kg^-1,")")))) 
+#ma.plots$Vcmax <- 
+
+ma.plots$Vcmax <- ma.plots$Vcmax + ylab(expression(atop(Vcmax~~or~~Vpmax~~at~~25*degree*C,group("(",mu*mol~~CO[2]~~m^-2~~s^-1,")"))))
+
+ma.plots$leaf_respiration_rate_m2 <- ma.plots$leaf_respiration_rate_m2 + ylab(expression(atop(Leaf~~Respiration~~Rate~~at~~25*degree*C,group("(",mu*mol~~CO[2]~~m^-2~~s^-1,")"))))
 #ma.plots$stomatal_slope.BB <- ma.plots$stomatal_slope.BB + ylab("Stomatal Slope \n Ball Berry Model (ratio)")
 
+ma.plots2 <- list()
 for(i in 1:length(ma.plots)){
-  ma.plots[[i]] <- ma.plots[[i]] +
-    theme(axis.text.x = element_text(size = 16),
-        axis.title = element_text(size = 18),
-        axis.text.y = element_blank(),
-        axis.ticks.y = element_line(color = 'white')#,
-        #axis.line.y = element_line(color = 'white')
-        )
+  ma.plots2[[i]] <- ma.plots[[i]] +
+    theme(text = element_text(family = 'Helvetica', size = 18, color = 'black'),
+          axis.text.x = element_text(size = 16, margin = unit(c(0.7,0,0,0), "cm")),
+          axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
+          axis.ticks.length = unit(-0.2, 'cm')
+          )
 }
 
+ma.plots3 <- lapply(ma.plots2, mirror_ticks)
+
 labels <- ggplot() + 
-  geom_text(aes(x = factor(1:4), y = 0, label = as.factor(c("Willow", "Poplar", "Switchgrass", "Miscanthus"))), hjust = 1, vjust = -0.5, size = 8, position = position_dodge(width=1.5)) + 
+  geom_text(aes(x = factor(1:4), y = 0, label = as.factor(c("Willow", "Poplar", "Switchgrass", "Miscanthus"))), hjust = 1, vjust = -0.5, size = 8, position = position_dodge(width = 1.5)) + 
   coord_flip() +
   scale_y_continuous(limits = c(0, 0))+ ylab('genus\n newline') +
   xlab(label = "  \n  ") +
@@ -442,13 +449,13 @@ labels <- ggplot() +
         axis.line.x = element_line(color = 'white'),
         axis.line.y = element_line(color = 'white'))
 
+ma_plotlist <- c(list(labels = labels), ma.plots3)
+ma_plotgrid <- plot_grid(plotlist = ma_plotlist, nrow = 1)
 
-ma.plotgrid <- plot_grid(plotlist = c(list(labels = labels), ma.plots), 
-                         nrow = 1)
-ma.plotgrid
-ggsave(plot = ma.plotgrid, 
-       filename = 'figures/ma.plotgrid.png', 
-       width = 18, height = 4, dpi = 200)
+ggsave(plot = ma_plotgrid, scale = 1/2,
+       filename = 'figures/ma_plotgrid.svg', 
+       width = 1000, height = 200, dpi = 200, units = 'mm')
+
 
 ```
 
@@ -942,17 +949,18 @@ p <- list(p1, p2, p3)
 p <- lapply(p, function(x) { x + theme(legend.position = 'none')})
 p[[4]] <- p4 + 
   theme(legend.key.size = unit(3, 'mm'),
+        legend.background = element_rect(color = NULL),
         legend.key = element_rect(size = 0),
         legend.title = element_blank(),
         legend.position = c(0.7,0.9))
 
 pp <- lapply(p, gcbb_plot_theme)
 
-ppp <- cowplot::plot_grid(plotlist = ppp, nrow = 1)
-ppp
-ggsave(plot = ppp, 
+#ppp <- cowplot::plot_grid(plotlist = pp, nrow = 1)
+#ppp
+cowplot::ggsave(plot = ppp, scale = 1/2,
       filename = 'figures/yield_ma_plots.png', 
-      width = 400, height = 100, dpi = 300, units = 'mm')
+      width = 800, height = 150, dpi = 200, units = 'mm')
 
 ```
 
