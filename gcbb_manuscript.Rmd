@@ -45,7 +45,7 @@ library(scales)
 library(dplyr)
 
 
-theme_set(theme_bw())
+theme_set(theme_bw(base_size = 10, base_family = 'Times'))
 
 ```
 
@@ -165,17 +165,17 @@ trait_summary_full <- genera_x_traits  %>%
 library(ggplotTicks)
 gcbb_plot_theme <- function(p){ 
   require(ggplotTicks)
-  newp <- p + scale_colour_brewer(palette = "Set1", labels = c('Miscanthus', 'Panicum (Switchgrass)')) +
+  newp <- p +
 #  scale_y_continuous(limits = c(0, 60), breaks = c(0, 20, 40, 60)) +
-  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+  theme(text = element_text(family = 'Times', size = 10, color = 'black'),
         line = element_line(color = 'black'),
         axis.title = element_text(vjust = 0.1),
         panel.grid = element_blank(),
         axis.ticks.length = unit(-0.1, 'cm'),
         axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
         axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
-        panel.grid = element_blank(),
-        panel.border = element_blank(),
+        #panel.grid = element_blank(),
+        #panel.border = element_blank(),
         strip.background = element_blank(), #http://docs.ggplot2.org/current/facet_wrap.html
         strip.text = element_text(size = 8))
   newp <- mirror_ticks(newp)
@@ -193,7 +193,7 @@ trait_plot <- ggplot(data = trait_summary_full) +
   theme_bw()
 
 trait_plot2 <- trait_plot +
-  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+  theme(text = element_text(family = 'Times', size = 10, color = 'black'),
         axis.title = element_text(vjust = 0.1),
         panel.grid = element_blank(),
         axis.ticks.length = unit(-0.1, 'cm'),
@@ -211,9 +211,9 @@ trait_plot2.1 <- trait_plot2 + theme(legend.key.size = unit(2, 'mm'),
 trait_plot3 <- mirror_ticks(trait_plot2.1)
 trait_plot3
 #print(trait_plot)
-ggsave(plot = trait_plot3, 
-       filename = 'figures/trait_records_by_genus.png', 
-       width = 169, height = 100, dpi = 200, units = 'mm')
+ggsave(plot = trait_plot3,
+       filename = 'figures/trait_records_by_genus.svg', 
+       width = 169, height = 100, dpi = 300, units = 'mm')
 
 
 ```
@@ -233,8 +233,23 @@ T <- rbind(T, leafN, yield, sla1, sla2, vmax)
 
 histogram_traits <- c("Yield", "leafN", "LAI", "SLA","Vmax", "Jmax")
 T <- T %>% filter(trait %in% histogram_traits)
-levels(T$trait) <- c("Jmax", "LAI", "Leaf Nitrogen (%)", "Specific Leaf Area (m2/kg)", "Vmax", "Yield (Mg/ha)")
 
+trait_labels <- list(Jmax = expression(atop(Jmax~~at~~25*degree*C,
+                                             group("(",mu*mol~~CO[2]~~m^-2~~s^-1,")"))),
+                     LAI = "Leaf Area Index\n(ratio)",
+                     leafN = "Leaf Nitrogen\n(%)",
+                     SLA = expression(atop(Specific~~Leaf~~Area,
+                                           group("(",m^2~~kg^-1,")"))),
+                     Vmax = expression(atop(Vcmax~~or~~Vpmax~~at~~25*degree*C,
+                                            group("(",mu*mol~~CO[2]~~m^-2~~s^-1,")"))),
+                     Yield =  expression(Yield~~"(Mg "*ha^"-1"*yr^"-1"*")"))
+
+label_plots <- list()
+for(l in names(trait_labels)){
+  label_plots[[l]] <- qplot(1, xlab = trait_labels[[l]])
+  
+}
+ 
 
 T <- T %>% mutate(genus = ifelse(genus %in% genera, genus, 'Other'))
 T$genus <- factor(T$genus, 
@@ -252,26 +267,31 @@ trait_hist <- ggplot(data = T) +
 
 
 trait_hist2 <- trait_hist +  
-  theme(text = element_text(family = 'Helvetica', size = 8, color = 'black'),
+  theme(text = element_text(family = 'Times', size = 10, color = 'black'),
         line = element_line(color = 'black'),
         axis.title = element_text(vjust = 0.1),
         panel.grid = element_blank(),
         axis.ticks.length = unit(-0.1, 'cm'),
-        axis.text.x = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
-        axis.text.y = element_text(size = 8, margin=margin(2,2,2,2,"mm")),
+        axis.text.x = element_text(margin=margin(2,2,2,2,"mm")),
+        axis.text.y = element_text(margin=margin(2,2,2,2,"mm")),
         legend.key.size = unit(3, 'mm'),
         legend.key = element_rect(size = 0),
         legend.title = element_blank(),
         #panel.grid = element_blank(),
         #panel.border = element_blank(),
-        strip.background = element_blank(), #http://docs.ggplot2.org/current/facet_wrap.html
-        strip.text = element_text(size = 8))
+        strip.background = element_blank())
 
 trait_hist3 <- mirror_ticks(trait_hist2, allPanels = TRUE)
 
-ggsave(plot = trait_hist3, 
-      filename = 'figures/trait_histograms_by_genus.png', 
-      width = 169, height = 100, dpi = 300, units = 'mm')
+ggplot() + 
+  geom_text(data = trait_labels, aes(x=20, y=wt, 
+      label = lab2), size = 3, parse = T)
+
+
+bigplot <- cowplot::plot_grid(plotlist = c(list(trait_hist3), label_plots), ncol = 1)
+ggsave(plot = bigplot, 
+      filename = 'figures/trait_histograms_by_genus.svg', 
+      width = 169, dpi = 300, units = 'mm')
 
 
 ```
@@ -408,7 +428,7 @@ for(var in vars){
   ma.plots[[var]] <- ggplot(data = ts2[variable == var], aes(pft, y = mean)) + 
     coord_flip() +
     geom_pointrange(aes(ymin = mean-sd, ymax =  mean + sd)) +
-    geom_text(aes(pft, y = mean, label = paste0("(", n, ")")), vjust = 2, size =6) +
+    geom_text(aes(pft, y = mean, label = paste0("(", n, ")")), vjust = 2, family = 'Times') +
     expand_limits(x = 0, y = 0) + 
     coord_flip() + xlab("") +
     scale_x_discrete(breaks=c("salix", "populus", "pavi", "misp"),
@@ -428,17 +448,16 @@ ma.plots$leaf_respiration_rate_m2 <- ma.plots$leaf_respiration_rate_m2 + ylab(ex
 ma.plots2 <- list()
 for(i in 1:length(ma.plots)){
   ma.plots2[[i]] <- ma.plots[[i]] +
-    theme(text = element_text(family = 'Helvetica', size = 18, color = 'black'),
-          axis.text.x = element_text(size = 16, margin = unit(c(0.7,0,0,0), "cm")),
-          axis.text.y = element_blank(), axis.ticks.y = element_blank(), 
-          axis.ticks.length = unit(-0.2, 'cm')
-          )
+    theme(axis.text.x = element_text(size = 10, margin = unit(c(0.7,0,0,0), "cm")),
+          axis.text.y = element_blank(), 
+          axis.title.x = element_text(size = 10),
+          axis.ticks.y = element_blank(), 
+          axis.ticks.length = unit(-0.2, 'cm'),
+          panel.grid = element_blank())
 }
 
-ma.plots3 <- lapply(ma.plots2, mirror_ticks)
-
 labels <- ggplot() + 
-  geom_text(aes(x = factor(1:4), y = 0, label = as.factor(c("Willow", "Poplar", "Switchgrass", "Miscanthus"))), hjust = 1, vjust = -0.5, size = 8, position = position_dodge(width = 1.5)) + 
+  geom_text(aes(x = factor(1:4), y = 0, label = as.factor(c("Willow", "Poplar", "Switchgrass", "Miscanthus"))), hjust = 1, vjust = -0.5, position = position_dodge(width = 1.5)) + 
   coord_flip() +
   scale_y_continuous(limits = c(0, 0))+ ylab('genus\n newline') +
   xlab(label = "  \n  ") +
@@ -447,14 +466,16 @@ labels <- ggplot() +
         axis.title = element_text(color = 'white', size = 18),
         axis.ticks = element_line(color = 'white'),
         axis.line.x = element_line(color = 'white'),
-        axis.line.y = element_line(color = 'white'))
+        axis.line.y = element_line(color = 'white'),
+        panel.grid = element_blank())
 
-ma_plotlist <- c(list(labels = labels), ma.plots3)
-ma_plotgrid <- plot_grid(plotlist = ma_plotlist, nrow = 1)
+ma_plotlist <- c(list(labels = labels), ma.plots2)
+ma_plotlist2 <- lapply(ma_plotlist, mirror_ticks)
+ma_plotgrid <- plot_grid(plotlist = ma_plotlist2, nrow = 1)#, rel_widths = c(0.4, 0.2, 0.2, 0.2))
 
-ggsave(plot = ma_plotgrid, scale = 1/2,
+ggsave(plot = ma_plotgrid,
        filename = 'figures/ma_plotgrid.svg', 
-       width = 1000, height = 200, dpi = 200, units = 'mm')
+       width = 225, height = 75, dpi = 300, units = 'mm')
 
 
 ```
@@ -760,8 +781,6 @@ load("~/dev/bety_manuscript/data/daymet_vars.RData")
 
 ```{r}
 met <- cruncep_vars %>% inner_join(daymet_vars, by = c('site_id','year'))
-require(ggplot2)
-theme_set(theme_bw())
 
 ggplot(data = met, aes(cruncep_gdd, daymet_gdd), alpha = 0.5) + 
   geom_point() +   
@@ -914,7 +933,7 @@ eff <- list(nrate = rbind(pavi_effects$nrate, misp_effects$nrate),
 
 ```{r yield_ma_plots, fig.width=8, fig.height=2}
 p1 <-  ggplot(data = ggg, aes(x = nrate, color = genus)) +
-  geom_point(aes(x = jitter(nrate, 20), y = mean), alpha = 0.25, size = 0.5) +
+  geom_point(aes(x = jitter(nrate, 20), y = mean), alpha = 0.25, size = 0.25) +
   geom_smooth(data = eff$nrate, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
   #geom_smooth(data = eff$nrate, aes(y = fit + se), method = 'lm', size= 0.5, linetype = 2, fullrange = FALSE) +
   #geom_smooth(data = eff$nrate, aes(y = fit - se), method = 'lm', size= 0.5, linetype = 2, fullrange = FALSE) + 
@@ -923,30 +942,28 @@ p1 <-  ggplot(data = ggg, aes(x = nrate, color = genus)) +
   xlim(0,250)
 
 p2 <-  ggplot(data = ggg, aes(x = summer_precip, color = genus)) +
-  geom_point(aes(y = mean), alpha = 0.25, size = 0.5) +
+  geom_point(aes(y = mean), alpha = 0.25, size = 0.25) +
   geom_smooth(data = eff$summer_precip, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
   ylab(" ") +
   xlab(expression("Growing Season Precipitation"~~"(mm "*yr^"-1"*")"))
 
 p3 <-  ggplot(data = ggg, aes(x = gdd, color = genus)) +
-  geom_point(aes(y = mean), alpha = 0.25, size = 0.5) +
-  geom_smooth(data = eff$gdd, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
-  scale_colour_brewer(palette = "Set1") +
-  ylab(" ") + 
+  geom_point(aes(y = mean), alpha = 0.25, size = 0.25) +
+  geom_smooth(data = eff$gdd, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE, size = 0.5) +
+  ylab(expression(Yield~~"(Mg "*ha^"-1"*yr^"-1"*")")) + 
   scale_x_continuous(name = expression(paste("Growing Degree Days", ~~(degree*C))))
 
 p4 <- ggplot(data = ggg, aes(x = age, color = genus)) +
-  geom_point(aes(x = jitter(age, 0.25), y = mean), alpha = 0.25, size = 0.5) +
-  geom_smooth(data = eff$age, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE) +
+  geom_point(aes(x = jitter(age, 0.5), y = mean), alpha = 0.25, size = 0.25) +
+  geom_smooth(data = eff$age, aes(y = fit), method = 'lm', fullrange = FALSE, se = FALSE, size = 0.5) +
   ylab(" ") +
   scale_x_continuous(name = 'Stand Age (yr)', limits = c(0, 10), breaks = c(0,3,6,9)) 
 
-
-
-
 p <- list(p1, p2, p3)
 
-p <- lapply(p, function(x) { x + theme(legend.position = 'none')})
+p <- lapply(p, function(x) { 
+  x + theme(legend.position = 'none') +
+    scale_color_discrete()})
 p[[4]] <- p4 + 
   theme(legend.key.size = unit(3, 'mm'),
         legend.background = element_rect(color = NULL),
@@ -955,12 +972,14 @@ p[[4]] <- p4 +
         legend.position = c(0.7,0.9))
 
 pp <- lapply(p, gcbb_plot_theme)
+ppp <- lapply(pp, function(x) x + scale_colour_brewer(palette = "Set1", labels = c('Miscanthus', 'Panicum (Switchgrass)')))
 
-#ppp <- cowplot::plot_grid(plotlist = pp, nrow = 1)
+pppp <- cowplot::plot_grid(plotlist = ppp)
 #ppp
-cowplot::ggsave(plot = ppp, scale = 1/2,
-      filename = 'figures/yield_ma_plots.png', 
-      width = 800, height = 150, dpi = 200, units = 'mm')
+cowplot::ggsave(plot = pppp,
+      filename = 'figures/yield_ma_plots.svg', 
+      width = 169, height = 100, dpi = 300, units = 'mm')
+
 
 ```
 
