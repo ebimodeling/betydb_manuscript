@@ -1,0 +1,144 @@
+---
+title: "Standalone Queries using rOpenSci ‘traits' package"
+author: "David LeBauer"
+date: "12/10/2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+The objective of this document is to demonstrate how to access the yield data and agronomic metadata used to produce figure 4 of the manuscript. This repeats the queries done in the gcbb_manuscript.Rmd file, except that it uses the Ropensci traits package to query the betydb.org API. Therefore this example does _not_ require direct access to the database. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+
+```{r packages}
+if(!require(traits)) install.packages('traits')
+library(traits)
+library(dplyr)
+library(ggplot2)
+
+options(betydb_url = 'http://betydb.org',
+        betydb_api_version = 'v1',
+        betydb_key = 'Kq2xEWiRCyj90Sq7EFVn2A0LxJb58UTbscJl4fJP'
+        # key is for guest user; 
+        # provides access to all public data 
+        # (this includes all data used in the ma)
+        ) 
+```
+
+
+
+### Query Yield data for switchgrass and miscanthus
+
+
+```{r yield-query, cache = TRUE}
+yields <- betydb_search(result_type = 'yields', limit = 'none')
+
+grass_yields <- yields %>% 
+    dplyr::filter(genus %in% c('Miscanthus', 'Panicum')) 
+
+```
+
+
+
+
+## Query and agronomic metadata 
+
+treatments are categorical, each study has >=1 treatment; managements describe the actual activities (planting, fertilization, irrigation, etc) and sometimes the level (planting density, fertilization rate, etc). 
+
+There is a many-to-many relationship between treatments and managements. One treatment can have many managements (e.g. control treatment had a planting date, a level of fertilization, etc). And each management can be associated with one or more treatments - e.g. the same planting for both a control and fertilized treatment.
+
+So first we query the tables, then join them, then create new columns for the date and level of specific managements.
+
+
+```{r managements, cache=TRUE}
+treatments <- betydb_query(table = 'treatments', limit = 'none') %>% 
+  dplyr::mutate(treatment_id = id) %>% 
+  dplyr::select(treatment_id, name, definition, control)
+
+managements <- betydb_query(table = 'managements', limit = 'none') %>%
+  dplyr::filter(mgmttype %in% c('fertilizer_N', 'fertilizer_N_rate', 'planting', 'irrigation')) %>%
+  dplyr::mutate(management_id = id) %>%
+  dplyr::select(management_id, date, mgmttype, level, units) 
+
+# now link managements to treatments
+m <- betydb_query(table = 'managements', associations_mode = 'ids', limit = 'none') 
+
+managements_treatments <- m %>%
+ select(treatment_id = `associated treatment ids`, management_id = id) %>% 
+  tidyr::unnest()
+
+managements <- managements %>%
+  left_join(managements_treatments, by = 'management_id') %>%
+  left_join(treatments, by = 'treatment_id') 
+```
+
+## Now compute specific managements of interest
+
+```{r management_events}
+nitrogen <- managements %>% 
+  dplyr::filter(mgmttype == "fertilizer_N_rate") %>%
+  dplyr::select(treatment_id, nrate = level)
+planting <- managements %>% 
+  dplyr::filter(mgmttype == "planting") %>%
+  dplyr::select(treatment_id, planting_date = date)
+planting_rate <- managements %>% 
+  dplyr::filter(mgmttype == "planting") %>%
+  dplyr::select(treatment_id, planting_date = date, planting_density = level) %>% 
+  dplyr::filter(!is.na(planting_density))
+irrigation <- managements %>% 
+  dplyr::filter(mgmttype == 'irrigation') 
+irrigation_rate <- irrigation %>% 
+  dplyr::filter(units == 'mm', !is.na(treatment_id)) %>% 
+  group_by(treatment_id, year = sql("extract(year from date)"), units) %>% 
+  summarise(irrig.mm = sum(level)) %>% 
+  group_by(treatment_id) %>% 
+  summarise(irrig.mm.y = mean(irrig.mm))
+irrigation_boolean <- irrigation %>%
+  group_by(treatment_id) %>% 
+  dplyr::mutate(irrig = as.logical(mean(level))) %>% 
+  dplyr::select(treatment_id, irrig = irrig)
+irrigation_all <- irrigation_boolean %>%
+  full_join(irrigation_rate, copy = TRUE, by = 'treatment_id')
+```
+
+### Subset grasses; combine with agronomic metadata
+
+Now lets join the agronomic metadata to the yield data:
+
+```{r}
+grass_yields <- grass_yields %>% 
+  dplyr::filter(genus %in% c('Miscanthus', 'Panicum')) %>%
+  left_join(nitrogen, by = 'treatment_id') %>% 
+  #left_join(planting, by = 'treatment_id') %>% 
+  left_join(planting_rate, by = 'treatment_id') %>% 
+  left_join(irrigation_all, by = 'treatment_id', copy = TRUE) %>% 
+  dplyr::mutate(age = lubridate::year(raw_date)- lubridate::year(planting_date),
+         nrate = ifelse(is.na(nrate), 0, nrate),
+         SE = ifelse(statname == "SE", stat, ifelse(statname == 'SD', stat / sqrt(n), NA)),
+         continent = ifelse(lon < -30, 'united_states', ifelse(lon < 75, 'europe', 'asia'))) %>%
+  dplyr::select(date, lat, lon, nrate, planting_date, planting_density, irrig, 
+         irrig.mm.y, age, mean, n, SE, scientificname, genus, continent, 
+         sitename, author, year) %>% 
+  dplyr::filter(!duplicated(.))
+save(grass_yields, file = "grass_yields.RData")
+
+```
+
+### Reproduce figure 4a (but without regression fits)
+
+We are just focusing on fig 4a because the scope of this is to demonstrate access to the yield data in BETYdb. The code required to fit regressions and download / prepare met data in the original analysis (gcbb_manuscript.Rmd) should still work.
+
+```{r}
+ggplot(data = grass_yields, aes(x = nrate, color = genus)) +
+  geom_point(aes(x = jitter(nrate, 20), y = mean), alpha = 0.25, size = 0.25) +
+  ylab(expression(Yield~~"(Mg "*ha^"-1"*yr^"-1"*")")) +
+  xlab(expression("Nitrogen Fertilization Rate"~~"(kg "*ha^"-1"*yr^"-1"*")")) + 
+  xlim(0,250) +
+  scale_colour_brewer(palette = "Set1", labels = c('Miscanthus', 'Panicum (Switchgrass)'))
+```
