@@ -22,13 +22,8 @@ library(traits)
 library(dplyr)
 library(ggplot2)
 
-options(betydb_url = 'http://betydb.org',
-        betydb_api_version = 'v1',
-        betydb_key = 'Kq2xEWiRCyj90Sq7EFVn2A0LxJb58UTbscJl4fJP'
-        # key is for guest user; 
-        # provides access to all public data 
-        # (this includes all data used in the ma)
-        ) 
+options(betydb_url = 'https://www.betydb.org',
+        betydb_api_version = 'v1') 
 ```
 
 
